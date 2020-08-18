@@ -1,108 +1,4 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
-
-<html>
-
-<head>
-	<title>Tao</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="/assets/css/main.css" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
-</head>
-
-
-<body>
-
-    <!-- Wrapper -->
-<div id="wrapper">
-
-<!-- Header -->
-<header id="header">
-	<a href="/" class="logo"><strong>Tao</strong> <span>of Mat</span></a>
-	<nav>
-		<a href="#menu">Menu</a>
-	</nav>
-</header>
-
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-        
-		    
-		
-		    
-		
-		    
-		
-		    
-		        <!-- <li><a href="mathewtitus.github.io/">Home</a></li> -->
-		        <li><a href="/">Home</a></li>
-	    	
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-		
-		    
-		
-		    
-		        <li><a href="/all_posts.html">Posts</a></li>
-		    
-		
-		    
-		        <li><a href="/coding.html">Coding</a></li>
-		    
-		
-		    
-		
-		    
-		        <li><a href="/landing.html">Writing</a></li>
-		    
-		
-		    
-		
-		    
-		        <li><a href="/math.html">Math</a></li>
-		    
-		
-		    
-		        <li><a href="/work.html">Work</a></li>
-		    
-		
-		    
-		
-		    
-		
-		    
-		
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav>
- <!---
+<!---
 layout: page
 title: Elements
 nav-menu: true
@@ -427,24 +323,24 @@ Finally, this is a <a href="#">link</a>.</p>
 		</div>
 		<!-- Break -->
 		<div class="4u 12u$(small)">
-			<input type="radio" id="demo-priority-low" name="demo-priority" checked="" />
+			<input type="radio" id="demo-priority-low" name="demo-priority" checked>
 			<label for="demo-priority-low">Low</label>
 		</div>
 		<div class="4u 12u$(small)">
-			<input type="radio" id="demo-priority-normal" name="demo-priority" />
+			<input type="radio" id="demo-priority-normal" name="demo-priority">
 			<label for="demo-priority-normal">Normal</label>
 		</div>
 		<div class="4u$ 12u$(small)">
-			<input type="radio" id="demo-priority-high" name="demo-priority" />
+			<input type="radio" id="demo-priority-high" name="demo-priority">
 			<label for="demo-priority-high">High</label>
 		</div>
 		<!-- Break -->
 		<div class="6u 12u$(small)">
-			<input type="checkbox" id="demo-copy" name="demo-copy" />
+			<input type="checkbox" id="demo-copy" name="demo-copy">
 			<label for="demo-copy">Email me a copy</label>
 		</div>
 		<div class="6u$ 12u$(small)">
-			<input type="checkbox" id="demo-human" name="demo-human" checked="" />
+			<input type="checkbox" id="demo-human" name="demo-human" checked>
 			<label for="demo-human">I am a human</label>
 		</div>
 		<!-- Break -->
@@ -512,101 +408,3 @@ print 'It took ' + i + ' iterations to sort the deck.';
 </section>
 
 </div>
- <!-- Contact -->
-<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/litsos.titus@gmail.com" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<section class="split">
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="#">litsos.titus@gmail.com</a>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<span></span>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>
-					
-					
-					
-					
-					
-					    United States of America
-					
-					</span>
-				</div>
-			</section>
-		</section>
-	</div>
-</section>
-
-<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				
-				
-				
-				
-				
-				
-				
-				
-				<li><a href="mathewtitus.github.com" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				
-				
-				
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Tao of Mat</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
-			</ul>
-		</div>
-	</footer>
-
-</div>
-
-<!-- Scripts -->
-	<script src="mathewtitus.github.io/assets/js/jquery.min.js"></script>
-	<script src="mathewtitus.github.io/assets/js/jquery.scrolly.min.js"></script>
-	<script src="mathewtitus.github.io/assets/js/jquery.scrollex.min.js"></script>
-	<script src="mathewtitus.github.io/assets/js/skel.min.js"></script>
-	<script src="mathewtitus.github.io/assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="mathewtitus.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="mathewtitus.github.io/assets/js/main.js"></script>
-
-
-</body>
-
-</html>
