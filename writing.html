@@ -14,17 +14,8 @@
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script> 
       $(function(){
-        $("#nav").load("nav.html"); 
-      });
-    </script>
-    <script> 
-      $(function(){
-        $("#contact-footer").load("contact-footer.html"); 
-      });
-    </script>
-    <script> 
-      $(function(){
-        $("#copyright").load("copyright.html"); 
+        $("#nav").load("/nav.html"); 
+        $("#footer").load("/footer.html"); 
       });
     </script>
   </head>
@@ -228,26 +219,11 @@
         </section>
 
       <!-- Footer -->
-        <section id="footer" class="wrapper">
-          <div class="title">The Rest Of It</div>
-          <div class="container">
-            <header class="style1">
-              <h2>Ipsum sapien elementum portitor?</h2>
-              <p>
-                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-                Nam pharetra laoreet imperdiet volutpat etiam feugiat.
-              </p>
-            </header>
-            <div id="contact-footer"></div>
-            <div id="copyright"></div>
-          </div>
-        </section>
+        <section id="footer" class="wrapper"></section>
 
     </div>
 
     <!-- Scripts -->
-      <!-- <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.dropotron.min.js"></script> -->
       <script src="assets/js/browser.min.js"></script>
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>

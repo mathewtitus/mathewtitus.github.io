@@ -10,48 +10,120 @@
 		<meta charset="utf-8" />
     <meta name=author content="Mathew Titus">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css>
-		<!-- <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  	<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
 		<meta name=description content="Consultant">
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<script src="assets/js/jquery.min.js"></script>
+
+		<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<link rel=stylesheet href=/assets/css/bootstrap.css>
+		<script src="/assets/js/jquery.min.js"></script>
 		<script> 
 	    $(function(){
-	      $("#nav").load("nav.html"); 
+	      // $("#nav").load("/nav.html"); 
+	      $("#footer").load("/footer.html"); 
 	    });
     </script>
-    <script> 
-      $(function(){
-        $("#copyright").load("copyright.html"); 
-      });
-    </script>
-    <script> 
-      $(function(){
-        $("#contact-footer").load("contact-footer.html"); 
-      });
-    </script>
+		<script src="/assets/js/bootstrap.js"></script>
+		
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<section id="header" class="wrapper">
-
 					<!-- Logo -->
 						<div id="logo">
-							<h1><a href="index.html">Sunstrand Technical Consulting</a></h1>
-							<p></p>
+							<h1><a href="/index.html">Sunstrand Technical Consulting</a></h1>
+							<p>Find solutions //<br class="mobile-only"> Codify them</p>
+							<!-- <p>Codify them</p> -->
+							<!-- <p>Deploy them at scale</p> -->
+							<!-- <p>Efficiency through planning</p> -->
+							<!-- <p>Speed up operations and development</p> -->
 						</div>
-
 					<!-- Nav -->
- 						<nav id="nav"></nav>
+ 						<nav id="nav">
+ 							  <ul>
+							    <li class="current"><a href="/index.html">Home</a></li>
+							    <li>
+							      <a href="#">Consulting</a>
+							      <ul>
+							        <li><a href="/stats.html">Statistics</a>
+							          <ul>
+							            <li><a href="/pages/stats/ttest.html">Modern t-tests</a></li>
+							            <li><a href="/pages/stats/voles.html">Vole Abundance</a></li>
+							            <li><a href="/pages/stats/causality.html">Causality</a></li>
+							            <li><a href="/pages/stats/jackpot.html">Jackpot Design</a></li>
+							          </ul>
+							        </li>
+							        <li><a href="/css.html">Computing</a>
+							          <ul>
+							            <li><a href="/pages/cs/stan.html">Stan</a></li>
+							            <li><a href="/pages/cs/cloud.html">Cloud Computing</a></li>
+							            <li><a href="/pages/cs/xai.html">eXplainable AI</a></li>
+							          </ul>
+							        </li>
+							        <li>
+							          <a href="#">Water</a>
+							          <ul>
+							            <li><a href="/pages/h2o/habs.html">Algal Blooms</a></li>
+							            <!-- <li><a href="/pages/h2o/xai.html">XAI for HABs</a></li> -->
+							            <li><a href="https://wrf5080.sunstrand.tech">XAI for HABs</a></li>
+							            <li><a href="/pages/h2o/wastewater.html">Wastewater</a></li>
+							          </ul>
+							        </li>
+							      </ul>
+							    </li>
+							    <li>
+							      <a href="/research.html">Research</a>
+							      <ul>
+							        <li><a href="/math.html">Mathematics</a>
+							          <ul>
+							            <li><a href="#">Mixing Times</a></li>
+							            <li><a href="#">Fractals</a></li>
+							            <li><a href="#">Branching Processes</a></li>
+							          </ul>
+							        </li>
+							        <li><a href="/physics.html">Physics</a></li>
+							        <li><a href="/genai.html">Generative AI</a></li>
+							      </ul>
+							    </li>
+							    <li><a href="/blog.html">Writing</a></li>
+							    <li><a href="/about.html">About</a></li>
+							  </ul>
 
+ 						</nav>
 				</section>
 
 			<!-- Intro -->
 				<section id="intro" class="wrapper style1">
-					<div class="title">Applied Mathematics</div>
+					<!-- <div class="title">Applied Mathematics</div> -->
+
+ 						<div id="carouselExample" class="carousel slide">
+ 							<div class="carousel-indicators">
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						  </div>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="images/NGC_4414.jpeg" class="d-block w-100" alt="..." style="max-width: 60%; display: inline-flex !important;">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="images/gal2.jpeg" class="d-block w-100" alt="..." style="max-width: 60%; display: inline-flex !important;">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="images/gal3.jpeg" class="d-block w-100" alt="..." style="max-width: 60%; display: inline-flex !important;">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+
 					<div class="container">
 						<p class="style1">We provide expert opinion on probability, statistics, and computing.</p>
 						<p class="style2">We believe that science comes first.</p>
@@ -85,7 +157,7 @@
 										<div class="col-6 col-12-medium">
 											<section>
 												<h3 class="fa-solid fa-code-branch">Native scientific computing</h3>
-												<p>We work in all common computing languages - Python, R, JaveScript, C++, Julia, etc. - in order to create products that fit well within existing architectures and are easily maintained.</p>
+												<p>We work in a variety of common computing languages - Python, R, JaveScript, C++, <b>SQL/SASS</b> etc. - in order to create products that fit well within existing architectures and are easily maintained.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
@@ -129,8 +201,27 @@
 					</div>
 				</section>
 
+			<!-- Footer -->
+				<section id="footer" class="wrapper"></section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
 			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
+<!-- 				<section id="highlights" class="wrapper style3">
 					<div class="title">Creative Computing</div>
 					<div class="container">
 						<div class="row aln-center">
@@ -166,33 +257,4 @@
 							</div>
 						</div>
 					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer" class="wrapper">
-					<div class="title">The Rest Of It</div>
-					<div class="container">
-						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
-							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
-							</p>
-						</header>
-						<div id="contact-footer"></div>
-            <div id="copyright"></div>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+				</section> -->
