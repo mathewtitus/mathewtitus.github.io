@@ -1,3 +1,3 @@
 # Stan: Statistical Model Fitting
 
-## Hamiltonian
+## Hamiltonian Monte Carlo

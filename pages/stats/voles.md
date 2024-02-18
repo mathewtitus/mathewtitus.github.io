@@ -27,10 +27,10 @@ Surveyors would map a winding course from plot to plot through the stand, taking
 Without empirical data to work with, I began by generating a dummy dataset. This allowed me to create in silica tests for the statistical model I was developing, so I could confirm both the efficacy of the model in recovering the data generating process, gain familiarity with the problem to better sniff out what aspects of model design would need attention or to be ignored; and finally, simulated data helps us stress test the model in an environment where we have perfect knowledge. This latter benefit is standard practice when formulating new models, so formulating a simulated process would be needed sooner or later.
 
 ### Stands of trees, nests
-A simulated forest region was generated for each stand of each age/distance combination. The stand is modeled as a square region with side length \\( L=? \\), with trees distributed randomly according to a spatial Poisson distribution with intensity parameter \\( \lambda= \\); this choice means that, for a plot of unit area, the expected number of trees contained within the circle is equal to **20**, matching the average number of trees per plot from the empirical study. We assume the vole nests are distributed such that each tree has a probability \\( v \\) of containing exactly one nest, and probability \\( 1-v \\) of having no nests. Note that this makes the probability of nest presence independent from tree to tree, determined by an independent Bernoulli random draw, while a positive spatial autocorrelation is observed among nests. This will be better accounted for in future, more sophisticated simulations.
+A simulated forest region was generated for each stand of each age/distance combination. The stand is modeled as a square region with side length \\( L=26 \\) units, with trees distributed randomly according to a spatial Poisson distribution with intensity parameter \\( \lambda = \\); this choice means that, for a plot of unit radius, the expected number of trees contained within the circle is equal to 15, roughly matching the average number of trees per plot from the empirical study. We assume the vole nests are distributed such that each tree has a probability \\( v \\) of containing exactly one nest, and probability \\( 1-v \\) of having no nests. A typical value for \\(v\\) is taken to be 0.00664, to match a known estimate of nest abundance (**1** nest / hectare; NB: the simulation's unit distance is 17.8m). Note that this makes the probability of nest presence independent from tree to tree, determined by an independent Bernoulli random draw, while a positive spatial autocorrelation is observed among nests. This will be better accounted for in future, more sophisticated simulations.
 
 ### Plots, paths
-Next, XX random points are selected within the plot such that no two plots overlap and each plot has at least one tree within its boundary. We performed this sampling by selecting \\(x\\) and \\(y\\) coordinates from the interval \\( [1/2\pi, L-1/2\pi] \\), insuring the plot is contained within the stand, \\( [0,L]\times[0,L] \\), then reject and resample any points that are sampled within \\( 1/\pi \\) units of a prior sample point (overlapping), or which are not within \\( 1/2\pi \\) units of any trees (empty).
+Next, 24 random points are selected within the plot such that no two plots overlap and each plot has at least one tree within its boundary. We performed this sampling by selecting \\(x\\) and \\(y\\) coordinates from the interval \\( [1, L-1] \\), insuring the plot is contained within the stand, \\( [0,L]\times[0,L] \\), then reject and resample any points that are sampled within \\( 2 \\) units of a prior sample point (overlapping), or which are not within \\( 1 \\) unit of any trees (empty).
 
 We construct the surveyors path as follows: 
 (1) label the plot center points \\((x_i, y_i)\\) such that \\( y_1 \leq y_2 \leq ... \leq y_N \\);
@@ -70,7 +70,9 @@ nest_1: 92.0
 nest_2: 92.0
 -->
 
-Any nest within a distance of \\(1/\pi\\) is, with a probability \\(p_{gr}\in[0,1]\\), detected. To simulate the resulting confirmatory climb and aerial scan, any nests within \\(1/\pi\\) of that nest are detected with probability \\( p_{tr} > p_{gr} \\).
+Any nest within a distance of \\(1\\) is, with a probability \\(p_{gr}\in[0,1]\\), detected. To simulate the resulting confirmatory climb and aerial scan, any nests within \\(1\\) of that nest are detected with probability \\( p_{tr} > p_{gr} \\).
+
+// Need to rewrite these gen sections
 
 ### 
 
