@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Mathew Titus</title>
-    <link>http://localhost:1313/about/</link>
+    <link>sunstrand.tech/about/</link>
     <description>Recent content in About on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Feb 2024 13:41:51 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>http://localhost:1313/about/cv/</link>
-      <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
-      <guid>http://localhost:1313/about/cv/</guid>
-      <description>My work and publications</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="sunstrand.tech/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

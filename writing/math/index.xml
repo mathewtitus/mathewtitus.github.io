@@ -2,25 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Math on Mathew Titus</title>
-    <link>http://localhost:1313/writing/math/</link>
+    <link>sunstrand.tech/writing/math/</link>
     <description>Recent content in Math on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Feb 2024 23:35:13 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/writing/math/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fractals</title>
-      <link>http://localhost:1313/writing/math/fractals/</link>
-      <pubDate>Tue, 27 Feb 2024 23:35:13 -0800</pubDate>
-      <guid>http://localhost:1313/writing/math/fractals/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mixing Times</title>
-      <link>http://localhost:1313/writing/math/mixing-times/</link>
-      <pubDate>Tue, 27 Feb 2024 23:35:04 -0800</pubDate>
-      <guid>http://localhost:1313/writing/math/mixing-times/</guid>
-      <description>Some actual text on this one.&#xA;More precisely, a fundamental result about Markov chains is that a finite state irreducible aperiodic chain has a unique stationary distribution π and, regardless of the initial state, the time-t distribution of the chain converges to π as t tends to infinity. Mixing time refers to any of several variant formalizations of the idea: how large must t be until the time-t distribution is approximately π?</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="sunstrand.tech/writing/math/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
