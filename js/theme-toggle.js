@@ -3,14 +3,14 @@ function makeToggle() {
     // make link
     let new_node = document.createElement("a")
     new_node.setAttribute("id", "theme-toggle")
-    new_node.setAttribute("class", "theme-toggle")
+    new_node.setAttribute("class", "theme-toggle pt3 pt0-l")
 
     // add icon
     let thIcon = document.createElement("img")
     thIcon.setAttribute("src", "/images/svg/sun.svg")
     thIcon.setAttribute("alt", "sun icon")
     thIcon.setAttribute("class", "theme-icon")
-    thIcon.setAttribute("style", "stroke:#babab; opacity:0.73; width: 26px; height: 26px; position: relative; top: 6px")
+    thIcon.setAttribute("style", "stroke:#babab; opacity:0.73; width: 26px; height: 26px;")
     new_node.appendChild(thIcon);
 
     // log
