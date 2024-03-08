@@ -10,7 +10,7 @@ It is widely thought that voles primarily nest in old growth forest, but they ha
 
 ## Nesting Research
 
-In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at OSU, NCRS?
+In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at OSU, NCASI?
 
 A large stretch of Western Oregon, from Coos Bay to ??? was split into four geographic study regions: North, North Central, South Central, South. Each region has old growth forest with nearby younger forest, with nearly uniform age. Stands were selected in each region to have samples across forest ages (80+, 60-80, 50-60, 40-50, 30-40, 20-30 years) and distances to old growth, classified as near (\\( \leq \\) 1km) or far (1 - 5km).
 
