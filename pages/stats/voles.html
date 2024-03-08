@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<!--
+  Escape Velocity by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Statistics - Sunstrand Technical Consulting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <!-- <script type="module" src="https://md-block.verou.me/md-block.js"></script> -->
+    <!-- <script async id="MathJax-script" src="/assets/js/mathjax-tex-chtml.js"></script> -->
+    <!-- <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+    <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      });
+    </script>
+
+    <script> 
+      $(function(){
+        $("#nav").load("/nav.html"); 
+      });
+    </script>
+    <script> 
+      $(function(){
+        $("#contact-footer").load("/contact-footer.html"); 
+      });
+    </script>
+    <script> 
+      $(function(){
+        $("#copyright").load("/copyright.html"); 
+      });
+    </script>
+  </head>
+  <body class="right-sidebar is-preload">
+    <div id="page-wrapper">
+
+      <!-- Header -->
+        <section id="header" class="wrapper">
+          <!-- Logo -->
+            <div id="logo">
+              <h1><a href="/index.html">Statistics</a></h1>
+              <p>Writing -- Projects</p>
+            </div>
+          <!-- Nav -->
+            <nav id="nav"></nav>
+        </section>
+
+      <!-- Main -->
+        <section id="main" class="wrapper style2">
+          <div class="title">Voles</div>
+          <div class="container">
+            <div class="row gtr-150">
+              <div class="col-8 col-12-medium">
+
+                <!-- Content -->
+                  <div id="content">
+                    <article class="box post">
+                      <header class="style1">
+                        <h2></h2>
+                        <p></p>
+                      </header>
+                    </article>
+                    <div class="row gtr-150">
+                      <div class="col-6 col-12-small">
+                        <section class="box">
+                          <header>
+                            <h2></h2>
+                          </header>
+                          <a href="#" class="image featured"><img src="/images/pic05.jpg" alt="" /></a>
+                          <p></p>
+                          <a href="#" class="button style1"></a>
+                        </section>
+                      </div>
+                      <div class="col-6 col-12-small">
+                        <section class="box">
+                          <header>
+                            <h2></h2>
+                          </header>
+                          <a href="#" class="image featured"><img src="" alt="" /></a>
+                          <p></p>
+                          <a href="/index.html#footer" class="button style1"></a>
+                        </section>
+                      </div>
+                    </div>
+
+                      <div id="post" style="color:green">
+                        <!-- Template content ports in here. -->
+
+                        <!-- Mathew Titus --><!-- Sunstrand TC --><!-- 2/7/2024 --><h1>Red Voles</h1><h2>Vole Nesting</h2><p>It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.</p><h2>Nesting Research</h2><p>In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at OSU, NCRS?</p><p>A large stretch of Western Oregon, from Coos Bay to ??? was split into four geographic study regions: North, North Central, South Central, South. Each region has old growth forest with nearby younger forest, with nearly uniform age. Stands were selected in each region to have samples across forest ages (80+, 60-80, 50-60, 40-50, 30-40, 20-30 years) and distances to old growth, classified as near (\( \leq \) 1km) or far (1 - 5km).</p><h2>Data Collection</h2><p>A pair of researchers would select a random collection of plots (roughly ten) within the stand of interest. The plots were fixed radius (17.8 meters), selected by ... These plots would be surveyed from ground level for nests, and upon sighting a potential nest site, a tree would be climbed to verify the nest, record occupancy state (occupied, recently occupied, vacated), tree characteristics, and scan the neighboring canopy for additional nests.</p><p>A small number of the plots were designated as climb plots, meaning that the researchers would climb a number of trees regardless of the presence of vole nests. The trees climbed were chosen for climbing safety and vantage, so that the climbers could confidently say they had made note of all nests within the plot.</p><p>Surveyors would map a winding course from plot to plot through the stand, taking reasonable detours in order to cover a larger area of the forest floor. During these transects, the nearby canopy was scanned for potential nests; at any such sightings the team would stop and climb to confirm the nest, and, as usual, scan for additional nearby nests.</p><h2>Data Generation</h2><p>Without empirical data to work with, I began by generating a dummy dataset. This allowed me to create in silica tests for the statistical model I was developing, so I could confirm both the efficacy of the model in recovering the data generating process, gain familiarity with the problem to better sniff out what aspects of model design would need attention or to be ignored; and finally, simulated data helps us stress test the model in an environment where we have perfect knowledge. This latter benefit is standard practice when formulating new models, so formulating a simulated process would be needed sooner or later.</p><h3>Stands of trees, nests</h3><p>A simulated forest region was generated for each stand of each age/distance combination. The stand is modeled as a square region with side length \( L=26 \) units, with trees distributed randomly according to a spatial Poisson distribution with intensity parameter \( \lambda = \); this choice means that, for a plot of unit radius, the expected number of trees contained within the circle is equal to 15, roughly matching the average number of trees per plot from the empirical study. We assume the vole nests are distributed such that each tree has a probability \( v \) of containing exactly one nest, and probability \( 1-v \) of having no nests. A typical value for \(v\) is taken to be 0.00664, to match a known estimate of nest abundance (<strong>1</strong> nest / hectare; NB: the simulation's unit distance is 17.8m). Note that this makes the probability of nest presence independent from tree to tree, determined by an independent Bernoulli random draw, while a positive spatial autocorrelation is observed among nests. This will be better accounted for in future, more sophisticated simulations.</p><h3>Plots, paths</h3><p>Next, 24 random points are selected within the plot such that no two plots overlap and each plot has at least one tree within its boundary. We performed this sampling by selecting \(x\) and \(y\) coordinates from the interval \( [1, L-1] \), insuring the plot is contained within the stand, \( [0,L]\times[0,L] \), then reject and resample any points that are sampled within \( 2 \) units of a prior sample point (overlapping), or which are not within \( 1 \) unit of any trees (empty).</p><p>We construct the surveyors path as follows: (1) label the plot center points \((x_i, y_i)\) such that \( y_1 \leq y_2 \leq ... \leq y_N \);(2) begin the path at \( (x_1, 0) \), moving vertically from the lower boundary (\( y=0 \)) to the first plot centered at \( (x_1, y_1) \);(3) continue laterally to the far boundary, \( (b_1, y_1) \) with \( b_1 = 0 \) or \( L \);(4) move upwards to the latitude \( y=y_2 \);(5) traverse the \( y=y_2 \) line horizontally to the far boundary;(6) repeat steps (4) and (5) for each increasing index value up to \( N \).</p><p>See Figure X for an example of the path given a random plot assignment.</p><p><center style="background-color: rgb(152, 152, 152);">  <br>  <img src="/images/voles_sim.png" alt="Random path through plots" style="width:80%;" />  <br><span style="color:black">  <em>Figure X: Simulated stand with trees (<span style="color:rgb(34, 139, 34)">without nests</span> and <span style="color:rgb(205, 92, 92)">with nests</span>), <span style="color:rgb(255, 250, 205)">plots and the path</span> between them, and <span style="color:rgb(255, 215, 0)">climb plots</span>. Opacity is higher for trees that more easily surveyed; compare the climb plots to the unsurveyed forest.</em>  </span></center></p><!-- floor_0: 152.0floor_1: 251.0floor_2: 152.0path_0: 255.0path_1: 250.0path_2: 205.0plot_0: 255.0plot_1: 250.0plot_2: 205.0climbed_plot_0: 255.0climbed_plot_1: 215.0climbed_plot_2: 0.0tree_0: 34.0tree_1: 139.0tree_2: 34.0nest_0: 205.0nest_1: 92.0nest_2: 92.0--><p>Any nest within a distance of \(1\) is, with a probability \(p_{gr}\in[0,1]\), detected. To simulate the resulting confirmatory climb and aerial scan, any nests within \(1\) of that nest are detected with probability \( p_{tr} &gt; p_{gr} \).</p><p>// Need to rewrite these gen sections</p><h3></h3><h2>Modeling the Data Generation Process</h2><p>We investigate several methods for modeling the nest-presence data. </p><h3>Occupancy Model</h3><p>Each plot surveyed is an independent spatial sample, but if we consider each to be a temporal replicate and the detection of one or more nests as the plot being "occupied", we can use an occupancy model to estimate the odds of population presence, as well as our detection probability. Comparing these results across the different stand types (age / distance), we can see how occupancy may be affected by the forest's age and distance to nearby old growth, which we assume houses red voles.</p><p>The general model is formulated as follows: An observer at locations \( s_i, i=1, \dots, N \) checks for species presence at distinct, discrete times labeled \( t_0 \leq t_1 \leq \dots \leq t_T \). Let \( \rho \in [0,1] \) represent the true odds of species occupation. We assume the observers do not suffer false positives; that is, if the species is not present, they record no presence with probability \(1\). If the species is present at site \( s_i \), time \( t_j \), denoted \( E_{i,j} \), the observer sights them with probability \( p \). Let \( F_{i,j} \) be a binary random variable, taking the value \( 1 \) only if the observer at \( (s_i, t_j) \) observes a member of the species:\[\begin{eqnarray} P(F_{i,j} = 1)  &amp;=&amp; P(\textrm{Species detected})\\&amp;=&amp; P(\textrm{Species present}) P(\textrm{Species detected}|\textrm{Species present}) \\ &amp;=&amp; \rho * P(F_{i,j}=1 | E_{i,j}) \\ &amp;=&amp; \rho * p. \end{eqnarray}\]In practice, were there only one location, we would have a bernoulli process with parameter \( \rho * p \), which we can fit to the data. However, we can transform the parameters as\[\begin{eqnarray}  \rho \mapsto a \rho \\  p \mapsto p / a\end{eqnarray}\]with \( a \) near enough 1 that \( a \rho, p/a \in [0,1] \), and the model is unchanged since \( Bernoulli(\rho * p) \sim Bernoulli(a \rho * p / a) \).</p><p>Using the data from the simulation described above, we have a collection of observations as follows:</p><p>[DataFrame of nest numbers]</p><p>In order to fit the statistical model described above </p><p>The major shortcoming of modeling the vole population presence with an occupancy model is that one of the theoretical underpinnings assumes a "closed population," meaning that the species' presence does not change between visits. However, treating spatial replicates as if they were temporal replicates is equivalent to assuming that during the survey either <em>all</em> plots are occupied or <em>none</em> are.</p><p>To improve upon this, we can use an N-mixture model, which accounts for ...</p><h3>N-Mixture Modeling</h3><p>Another modeling paradigm for unmarked individuals, sampled randomly within a closed system, is the N-mixture model. This model [REF] </p><h3>...</h3><h2>Fitting the Model</h2>
+
+                        <!-- End blog post content. -->
+                      </div>
+
+                  </div>
+
+              </div>
+              <div class="col-4 col-12-medium">
+
+                <!-- Sidebar -->
+                  <div id="sidebar">
+                    <section class="box">
+                      <header>
+                        <h2></h2>
+                      </header>
+                      <p></p>
+                      <a href="#" class="button style1"></a>
+                    </section>
+                    <section class="box">
+                      <header>
+                        <h2></h2>
+                      </header>
+                      <ul class="style2">
+                        <li>
+                          <article class="box post-excerpt">
+                            <a href="#" class="image left"><img src="/images/pic08.jpg" alt="" /></a>
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                          </article>
+                        </li>
+                        <li>
+                          <article class="box post-excerpt">
+                            <a href="#" class="image left"><img src="/images/pic09.jpg" alt="" /></a>
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                          </article>
+                        </li>
+                        <li>
+                          <article class="box post-excerpt">
+                            <a href="#" class="image left"><img src="/images/pic10.jpg" alt="" /></a>
+                            <h3><a href="#"></a></h3>
+                            <p></p>
+                          </article>
+                        </li>
+                      </ul>
+                      <a href="#" class="button style1"></a>
+                    </section>
+                    <section class="box">
+                      <header>
+                        <h2>Magna diam vehicula</h2>
+                      </header>
+                      <ul class="style3">
+                        <li><a href="#">Nulla iaculis egestas varius</a></li>
+                        <li><a href="#">Augue massa feugiat quam pretium</a></li>
+                        <li><a href="#">Orci sem vel libero cras nisi odio</a></li>
+                      </ul>
+                    </section>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- Highlights -->
+        <section id="highlights" class="wrapper style3">
+          <div class="title"></div>
+          <div class="container">
+          </div>
+        </section>
+
+      <!-- Footer -->
+        <section id="footer" class="wrapper">
+          <div class="title">Get a Quote</div>
+          <div class="container">
+            <header class="style1">
+              <h2>Get in touch and arrange for a meeting.</h2>
+              <p>
+                The initial consultation is free.<br />We can talk solutions, milestones, and pricing.
+              </p>
+            </header>
+            <div id="contact-footer"></div>
+            <div id="copyright"></div>
+          </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+      <script>
+        
+        async function* makeTextFileLineIterator(fileURL) {
+          const utf8Decoder = new TextDecoder("utf-8");
+          const response = await fetch(fileURL);
+          const reader = response.body.getReader();
+          let { value: chunk, done: readerDone } = await reader.read();
+          chunk = chunk ? utf8Decoder.decode(chunk) : "";
+
+          const newline = /\r?\n/gm;
+          let startIndex = 0;
+          let result;
+
+          while (true) {
+            const result = newline.exec(chunk);
+            if (!result) {
+              if (readerDone) break;
+              const remainder = chunk.substr(startIndex);
+              ({ value: chunk, done: readerDone } = await reader.read());
+              chunk = remainder + (chunk ? utf8Decoder.decode(chunk) : "");
+              startIndex = newline.lastIndex = 0;
+              continue;
+            }
+            yield chunk.substring(startIndex, result.index);
+            startIndex = newline.lastIndex;
+          }
+
+          if (startIndex < chunk.length) {
+            // Last line didn't end in a newline char
+            yield chunk.substr(startIndex);
+          }
+        }
+        
+        // text = makeTextFileLineIterator("stats/voles.html")
+        // console.log(text)
+        // $("#post")[0].innerHTML = text
+      </script>
+      <script src="/assets/js/browser.min.js"></script>
+      <script src="/assets/js/breakpoints.min.js"></script>
+      <script src="/assets/js/util.js"></script>
+      <script src="/assets/js/main.js"></script>
+
+  </body>
+</html>
