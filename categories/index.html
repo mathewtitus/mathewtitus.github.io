@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -25,55 +25,8 @@
     
 <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<script> console.log("https://sunstrand.tech/") </script>
-    <script>
+<script> console.log("http://localhost:1313/") </script>
     
-    function setTheme(theme) {
-        let body = document.body;
-        let themeIcon = document.querySelector(".theme-icon");
-        if (theme === "dark") {
-            console.log("Going dark")
-            body.classList.add("dark-mode");
-            themeIcon.src = "https:\/\/sunstrand.tech\/images/svg/moon.svg";
-            themeIcon.alt = "moon icon";
-        } else {
-            console.log("Lightening")
-            body.classList.remove("dark-mode");
-            themeIcon.src = "https:\/\/sunstrand.tech\/images/svg/sun.svg";
-            themeIcon.alt = "sun icon";
-        }
-        
-        localStorage.setItem("theme", theme);
-    }
-
-    
-    window.onload = (e) => {
-        let theme = localStorage.getItem("theme") || "light";
-        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (isDarkMode) {
-            
-            setTheme('dark');
-
-        } else {
-            
-            setTheme('light');
-        }
-        setTheme(theme);
-
-        
-        document.getElementById("theme-toggle").addEventListener("click", function() {
-            if (theme === "light") {
-                theme = "dark";
-            } else {
-                theme = "light";
-            }
-            setTheme(theme);
-        });
-    }
-
-    console.log("More text; static/js/theme-toggle.js")
-
-</script>
 
     
       
@@ -88,13 +41,13 @@
     
 
     
-      <link rel="canonical" href="https://sunstrand.tech/categories/">
+      <link rel="canonical" href="http://localhost:1313/categories/">
     
 
     <meta property="og:title" content="Categories" />
 <meta property="og:description" content="Sunstrand Technical Consulting." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://sunstrand.tech/categories/" />
+<meta property="og:url" content="http://localhost:1313/categories/" />
 
 <meta itemprop="name" content="Categories">
 <meta itemprop="description" content="Sunstrand Technical Consulting."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Categories"/>
@@ -157,7 +110,7 @@
 </div>
 
       <a id="theme-toggle" class="theme-toggle" href="#">
-        <img src="https://sunstrand.tech/images/svg/sun.svg" alt="sun icon" class="theme-icon" style="stroke:#bababa"/>
+        <img src="http://localhost:1313/images/svg/sun.svg" alt="sun icon" class="theme-icon" style="stroke:#bababa"/>
       </a>
     </div>
   </div>
@@ -190,7 +143,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo" style="position: fixed; bottom: 0px">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://sunstrand.tech/" >
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
     &copy;  Mathew Titus 2024 
   </a>
     <div>

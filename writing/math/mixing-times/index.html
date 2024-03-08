@@ -27,54 +27,7 @@ More precisely, a fundamental result about Markov chains is that a finite state 
 <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <script> console.log("http://localhost:1313/") </script>
-    <script>
     
-    function setTheme(theme) {
-        let body = document.body;
-        let themeIcon = document.querySelector(".theme-icon");
-        if (theme === "dark") {
-            console.log("Going dark")
-            body.classList.add("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/images/svg/moon.svg";
-            themeIcon.alt = "moon icon";
-        } else {
-            console.log("Lightening")
-            body.classList.remove("dark-mode");
-            themeIcon.src = "http:\/\/localhost:1313\/images/svg/sun.svg";
-            themeIcon.alt = "sun icon";
-        }
-        
-        localStorage.setItem("theme", theme);
-    }
-
-    
-    window.onload = (e) => {
-        let theme = localStorage.getItem("theme") || "light";
-        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (isDarkMode) {
-            
-            setTheme('dark');
-
-        } else {
-            
-            setTheme('light');
-        }
-        setTheme(theme);
-
-        
-        document.getElementById("theme-toggle").addEventListener("click", function() {
-            if (theme === "light") {
-                theme = "dark";
-            } else {
-                theme = "light";
-            }
-            setTheme(theme);
-        });
-    }
-
-    console.log("More text; static/js/theme-toggle.js")
-
-</script>
 
     
       
