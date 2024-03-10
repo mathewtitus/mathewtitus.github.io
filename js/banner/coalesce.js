@@ -1,6 +1,6 @@
 'use strict';
 
-const particleCount = 700;
+const particleCount = 2000;
 const particlePropCount = 9;
 const particlePropsLength = particleCount * particlePropCount;
 const baseTTL = 100;
@@ -48,6 +48,7 @@ function initParticles() {
   for (i = 0; i < particlePropsLength; i += particlePropCount) {
     initParticle(i);
   }
+  // console.log(particleProps.slice(0,particlePropCount))
 }
 
 function initParticle(i) {
@@ -73,6 +74,8 @@ function drawParticles() {
   for (i = 0; i < particlePropsLength; i += particlePropCount) {
     updateParticle(i);
   }
+
+  // console.log(particleProps.slice(0,particlePropCount))
 }
 
 function updateParticle(i) {
@@ -107,11 +110,17 @@ function updateParticle(i) {
 
 function drawParticle(x, y, theta, life, ttl, size, hue) {
   let xRel = x - (0.5 * size), yRel = y - (0.5 * size);
+  let centerAngle = 6*Math.PI/8;
+  let phi = Math.abs(theta - centerAngle)
+
+  let maxLight = 1.0;
+  let light = Math.max(maxLight - 30*Math.PI*phi/4, 0.0)
+  light = 1.0
   
   ctx.a.save();
   ctx.a.lineCap = 'round';
   ctx.a.lineWidth = 1;
-  ctx.a.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
+  ctx.a.strokeStyle = `hsla(${hue},100%,60%,${light * fadeInOut(life, ttl)})`;
   ctx.a.beginPath();
   ctx.a.translate(xRel, yRel);
   ctx.a.rotate(theta);
@@ -119,6 +128,12 @@ function drawParticle(x, y, theta, life, ttl, size, hue) {
   ctx.a.strokeRect(xRel, yRel, size, size);
   ctx.a.closePath();
   ctx.a.restore();
+
+  // if (Math.abs(x)<0.01){
+  //   console.log("phi: " + phi)
+  //   console.log("light: " + light)
+  //   console.log("stroke: " + `hsla(${hue},100%,60%,${light/100})`)
+  // }
 }
 
 function createCanvas() {
