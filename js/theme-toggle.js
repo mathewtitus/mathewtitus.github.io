@@ -13,10 +13,6 @@ function makeToggle() {
     thIcon.setAttribute("style", "stroke:#babab; opacity:0.73; width: 26px; height: 26px;")
     new_node.appendChild(thIcon);
 
-    // log
-    console.log("making new node: ")
-    console.log(new_node)
-
     // add to page
     let socials = document.querySelector(".ananke-socials");
     socials.appendChild(new_node);
@@ -27,12 +23,12 @@ function setTheme(theme) {
     let body = document.body;
     let themeIcon = document.querySelector(".theme-icon");
     if (theme === "dark") {
-        console.log("Going dark")
+        // console.log("Going dark")
         body.classList.add("dark-mode");
         themeIcon.src = "/images/svg/moon.svg";
         themeIcon.alt = "moon icon";
     } else {
-        console.log("Lightening")
+        // console.log("Lightening")
         body.classList.remove("dark-mode");
         themeIcon.src = "/images/svg/sun.svg";
         themeIcon.alt = "sun icon";
@@ -43,7 +39,6 @@ function setTheme(theme) {
 
 // Retrieve the user-selected theme mode from local storage
 window.onload = (e) => {
-    // console.log("window loaded")
     makeToggle();
     let theme = localStorage.getItem("theme") || "light";
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;

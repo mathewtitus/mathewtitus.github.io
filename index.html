@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Sunstrand Technical Consulting | Mathew Titus</title>
+    <title>Sunstrand | Mathew Titus</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Sunstrand Technical Consulting.">
+    <meta name="description" content="Technical Consulting">
     <meta name="generator" content="Hugo 0.123.3">
     
     
@@ -22,9 +22,17 @@
 
 
 
+  <script> console.log("calling GetResource on " + "custom.css") </script>
+  
+    <link rel="stylesheet" href="/custom.css">
+  
+
     <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" async src="/js/all.min.js"></script>
+<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
 
 <script> console.log("https://www.sunstrand.tech/") </script>
+
 
     
       
@@ -42,14 +50,14 @@
       <link rel="canonical" href="https://www.sunstrand.tech/">
     
 
-    <meta property="og:title" content="Sunstrand Technical Consulting" />
-<meta property="og:description" content="Sunstrand Technical Consulting." />
+    <meta property="og:title" content="Sunstrand" />
+<meta property="og:description" content="Technical Consulting" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.sunstrand.tech/" />
 
-<meta itemprop="name" content="Sunstrand Technical Consulting">
-<meta itemprop="description" content="Sunstrand Technical Consulting."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Sunstrand Technical Consulting"/>
-<meta name="twitter:description" content="Sunstrand Technical Consulting."/>
+<meta itemprop="name" content="Sunstrand">
+<meta itemprop="description" content="Technical Consulting"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Sunstrand"/>
+<meta name="twitter:description" content="Technical Consulting"/>
 
 	
   </head>
@@ -57,10 +65,21 @@
   <body class="ma0 avenir bg-near-white">
 
     
-
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
+      
+        <script>console.log("custom_header found: " +  true )</script>
+        <header>
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo4.css" />
+  <script>
+    document.documentElement.className="js";
+    var supportsCssVars=function(){
+      var e,t=document.createElement("style");
+      return t.innerHTML="root: { --tmp-var: bold; }", document.head.appendChild(t), e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")), t.parentNode.removeChild(t),e
+    };
+    supportsCssVars()||alert("Please view this demo in a browser that supports CSS Variables.");
+  </script>
+    <div class="pb3-m pb6-l content content--canvas up">
+      <nav class="pv3 ph3 ph4-ns up" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
       
@@ -70,6 +89,16 @@
     <div class="flex-l items-center">
       
 
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/cv" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
       
       
 <div class="ananke-socials">
@@ -111,28 +140,70 @@
   </div>
 </nav>
 
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Sunstrand Technical Consulting
+      <div class="tc-l pv3 ph3 ph4-ns up">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title up">
+          Sunstrand
         </h1>
+        
+          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4 up">
+            Technical Consulting
+          </h2>
         
       </div>
     </div>
-  </header>
+</header>
 
-
-    <main class="pb5 bg-white" role="main">
+      
+    
+    <main class="pb5 bg-white up" role="main">
       
 <script>
   console.log("home")
   console.log("Pages(0)")
 </script>
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-    <p>Mathematics, statistics, and computing.</p>
-<p><img src="/images/qr-code.png" alt="Contact QR"></p>
+<article class="mw6 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+  <div class="tc">
+    <img src="/images/profile.jpg" class="br4 dib ba b--black-05 pa2" title="Photo of Mat">
+    <h1 class="f3 mb2">Mathew Titus (Right)</h1>
+    <h2 class="f5 fw4 gray mt0">Founder</h2>
+  </div>
+</article>
+<article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+  <p>Mathematics, statistics, and computing.</p>
 
-  </article>
+</article>
+<article>
+  
+  <div class="collapse-bar w-100 bb bt ma1 pa3">
+      <center>
+        QR Code - Contact Info <i class="fa-solid fa-arrow-turn-down"></i>
+      </center>
+  </div>
+  <div class="collapse-content pa3" style="display: none,  max-width: 500px">
+    <center>
+      <img class="mw6-ns" src="/images/qr-code.png" style="object-position: center;">
+    </center>
+  </div>
+  <div class="ma3"></div>
+</article>
+<script>
+  var coll = document.getElementsByClassName("collapse-bar")[0];
+  var content = document.getElementsByClassName("collapse-content")[0];
+  coll.addEventListener("click", function() {
+    this.classList.toggle("active");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      content.scrollIntoView({ behavior: "smooth", block: "end" })
+    }
+  });
+</script>
+<script>
+  var ma = document.querySelector("main")
+  ma.classList.add("relative")
+</script>
+
   
   
   
@@ -187,10 +258,12 @@
 </footer>
 
   </body>
-  <script>
-    console.log("Calling partial 'theme-toggle' .... ")
-  </script>
   <script type="text/javascript" src="/js/theme-toggle.js">
 </script>
+
+<script src="js/banner/noise.min.js"></script>
+<script src="js/banner/util.js"></script>
+<script async src="js/banner/coalesce.js"></script>
+
 
 </html>
