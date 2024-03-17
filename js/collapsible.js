@@ -1,8 +1,6 @@
 
 // Add collapsing activity to `collapsible` class items
 
-console.log("Running collapsible.js")
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -16,7 +14,6 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
     var icos = this.children[0].children[0].children
-    console.log("icos: " + icos)
     for (j=0; j < icos.length; j++){
       icos[j].classList.toggle("hide");
     }
