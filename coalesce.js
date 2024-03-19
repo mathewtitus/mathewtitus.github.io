@@ -1,22 +1,27 @@
 (() => {
   // ns-params:@params
-  var params_default = { pageName: "About" };
+  var params_default = { pageName: "404 Page not found", theme: "dark" };
 
   // <stdin>
   console.log("in coalesce.js");
-  console.log(params_default.pageName);
-  var particleCount = 2e3;
+  console.log(params_default);
+  var particleCount = 200;
   var particlePropCount = 9;
   var particlePropsLength = particleCount * particlePropCount;
   var baseTTL = 100;
   var rangeTTL = 500;
   var baseSpeed = 0.1;
   var rangeSpeed = 1;
-  var baseSize = 2;
-  var rangeSize = 10;
+  var baseSize = 1;
+  var rangeSize = 1;
   var baseHue = 10;
   var rangeHue = 100;
-  var backgroundColor = "rgb(50,50,50)";
+  var backgroundColor = "rgb(230,230,230)";
+  if (params_default.theme === "light") {
+    backgroundColor = "rgb(200,200,200)";
+  } else {
+    backgroundColor = "rgb(50,50,50)";
+  }
   var container;
   var canvas;
   var ctx;

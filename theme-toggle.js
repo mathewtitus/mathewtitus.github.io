@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var params_default = { pageName: "Sunstrand" };
+  var params_default = { pageName: "About", theme: "dark" };
 
   // <stdin>
   console.log("Page: " + params_default.pageName);
@@ -12,10 +12,8 @@
     thIcon.setAttribute("src", "/images/svg/sun.svg");
     thIcon.setAttribute("alt", "sun icon");
     thIcon.setAttribute("class", "theme-icon");
-    thIcon.setAttribute("style", "stroke:#babab; opacity:0.73; width: 26px; height: 26px;");
     new_node.appendChild(thIcon);
     let socials = document.querySelector(".ananke-socials");
-    socials.appendChild(new_node);
   }
   function setTheme(theme) {
     let body = document.body;
@@ -50,6 +48,4 @@
       setTheme(theme);
     });
   };
-})();
-};
 })();

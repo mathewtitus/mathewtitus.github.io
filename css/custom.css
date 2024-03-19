@@ -1,10 +1,64 @@
+/** Navigation */
+
+#SVGRepo_iconCarrier path {
+  stroke: currentColor;
+}
+
+.theme-icon {
+  cursor: pointer;
+  transition: 0.2s;
+/*  color: #bababa;*/
+/*  stroke: currentColor;*/
+  opacity: 0.68;
+  width: 26px;
+  height: 26px;
+}
+
+.theme-icon:hover {
+  opacity: 1.0;
+}
+
+
+
+
+
+
+/** Light mode */
+
+body header, main, footer {
+  background-color: whitesmoke;
+  color: black;
+}
+
+
+/** Dark mode */
+
+body.dark-mode header, body.dark-mode main, body.dark-mode footer {
+  background-color: whitesmoke;
+  color: black;
+}
+
+body.dark-mode .theme-icon {
+  color: #bababa;
+  opacity:0.73;
+}
+
+body.dark-mode .theme-icon:hover {
+  opacity: 0.48;
+}
+
+
+
+
+
+/** CV */
 
 .collapsible{
   border: solid;
   border-color: transparent;
   text-align: left;
   outline: none;
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .collapsible:hover {
@@ -33,4 +87,5 @@
   list-style-type: none;
   list-style-position: outside;
 }
+
 
