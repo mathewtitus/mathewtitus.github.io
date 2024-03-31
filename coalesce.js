@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var params_default = { pageName: "404 Page not found", theme: "dark" };
+  var params_default = { pageName: "Consulting", theme: "dark" };
 
   // <stdin>
   console.log("in coalesce.js");

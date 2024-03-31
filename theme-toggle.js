@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var params_default = { pageName: "About", theme: "dark" };
+  var params_default = { pageName: "404 Page not found", theme: "dark" };
 
   // <stdin>
   console.log("Page: " + params_default.pageName);
