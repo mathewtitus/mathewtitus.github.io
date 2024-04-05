@@ -7,7 +7,7 @@
     <title>About | Mathew Titus</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Sunstrand Technical Consulting.">
-    <meta name="generator" content="Hugo 0.123.3">
+    <meta name="generator" content="Hugo 0.124.1">
     
     
     
@@ -20,8 +20,18 @@
 
 
 
+  <script>
+    console.log("Adding CSS stylesheet css\/nav.css")
+  </script>
   
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/nav.css">
+  
+
+  <script>
+    console.log("Adding CSS stylesheet css\/about.css")
+  </script>
+  
+    <link rel="stylesheet" href="/css/about.css">
   
 
     <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -31,6 +41,8 @@
 
     
       
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
 
     
 
@@ -49,7 +61,6 @@
 <meta property="og:description" content="Sunstrand Technical Consulting." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://sunstrand.tech/about/" />
-
 <meta itemprop="name" content="About">
 <meta itemprop="description" content="Sunstrand Technical Consulting."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="About"/>
 <meta name="twitter:description" content="Sunstrand Technical Consulting."/>
@@ -66,7 +77,7 @@
 
   <header>
     <script>
-    console.log("featured_image not defined; defaulting \n" + {"Date":"2024-02-25T13:41:51-08:00","Lastmod":"2024-02-25T13:41:51-08:00","PublishDate":"0001-01-01T00:00:00Z","ExpiryDate":"0001-01-01T00:00:00Z","Aliases":null,"BundleType":"branch","Description":"","Draft":false,"IsHome":false,"Keywords":null,"Kind":"section","Layout":"","LinkTitle":"About","IsNode":true,"IsPage":false,"Path":"/about","Pathc":"/about","Slug":"","Lang":"en","IsSection":true,"Section":"about","Sitemap":{"ChangeFreq":"","Priority":-1,"Filename":"sitemap.xml"},"Type":"about","Weight":0})
+    console.log("featured_image not defined; defaulting \n" + {"Date":"2024-04-04T00:00:00Z","Lastmod":"2024-04-04T00:00:00Z","PublishDate":"0001-01-01T00:00:00Z","ExpiryDate":"0001-01-01T00:00:00Z","Aliases":null,"BundleType":"branch","Description":"","Draft":false,"IsHome":false,"Keywords":null,"Kind":"section","Layout":"","LinkTitle":"About","IsNode":true,"IsPage":false,"Path":"/about","Pathc":"/about","Slug":"","Lang":"en","IsSection":true,"Section":"about","Sitemap":{"ChangeFreq":"","Priority":-1,"Filename":"sitemap.xml"},"Type":"about","Weight":0})
   </script>
     
     <div class="pb3-m pb6-l ">
@@ -84,8 +95,14 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/cv" title="CV page">
-              CV
+            <a class="no-underline o-80" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="no-underline o-80" href="/consulting" title="Consulting page">
+              Consulting
             </a>
           </li>
           
@@ -158,16 +175,50 @@
     <main class="pb5 up" role="main">
       
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"><p>This is the _index.md file in the <code>/about</code> folder</p>
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"><p>See below for my <a href="/about/cv/">CV</a> and other interests.</p>
 </section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        
+        
+        <div class="relative w-100 mb4">
+          
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+          
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <a href="/about/cv/" class="db grow">
+            <img src="https://sunstrand.tech/images/chalkboard.jpg" class="img" alt="image from Curriculum Vitae">
+          </a>
+        </div>
+      
+      <div class="blah w-100 w-60-ns pl3-ns">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/about/cv/" class="color-inherit dim link">
+            Curriculum Vitae
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          My work and publications
+        </div>
+          <a href="/about/cv/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">View CV</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+        </div>
       
     </section></article>
 
     </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo" style="position: fixed; bottom: 0px">
+    
+<footer class="bottom-0 w-100 pa3 up" role="contentinfo" style="position: fixed; bottom: 0px">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://sunstrand.tech/" >
+  <a class="f4 fw4 hover-white no-underline dn dib-ns pv2 ph3" href="https://sunstrand.tech/" >
     &copy;  Mathew Titus 2024 
   </a>
     <div>
@@ -226,13 +277,11 @@
 
 <script>
   let theme = localStorage.getItem("theme") || "light";
-</script><script>
-  console.log("in theme toggle.html")
-  console.log("map[draft:false iscjklanguage:false title:About]")
 </script><script src="https://sunstrand.tech/theme-toggle.js"></script>
 
 <script src="/js/banner/noise.min.js"></script>
-<script src="/js/banner/util.js"></script><script> console.log("coalesce permalink: https:\/\/sunstrand.tech\/coalesce.js") ></script><script async src="https://sunstrand.tech/coalesce.js"></script>
+<script src="/js/banner/util.js"></script>
+
 
 
 

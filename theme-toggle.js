@@ -1,9 +1,5 @@
 (() => {
-  // ns-params:@params
-  var params_default = { pageName: "404 Page not found", theme: "dark" };
-
   // <stdin>
-  console.log("Page: " + params_default.pageName);
   function makeToggle() {
     let new_node = document.createElement("a");
     new_node.setAttribute("id", "theme-toggle");
@@ -14,6 +10,7 @@
     thIcon.setAttribute("class", "theme-icon");
     new_node.appendChild(thIcon);
     let socials = document.querySelector(".ananke-socials");
+    socials.appendChild(new_node);
   }
   function setTheme(theme) {
     let body = document.body;
@@ -24,10 +21,13 @@
       themeIcon.alt = "moon icon";
     } else {
       body.classList.remove("dark-mode");
-      themeIcon.src = "/images/svg/sun.svg";
+      themeIcon.src = "/images/svg/sun-light.svg";
       themeIcon.alt = "sun icon";
     }
     localStorage.setItem("theme", theme);
+  }
+  function startTransition() {
+    localStorage.setItem("transition", 0);
   }
   window.onload = (e) => {
     makeToggle();
@@ -39,13 +39,11 @@
       setTheme("light");
     }
     setTheme(theme);
+    localStorage.setItem("transition", 1);
     document.getElementById("theme-toggle").addEventListener("click", function() {
-      if (theme === "light") {
-        theme = "dark";
-      } else {
-        theme = "light";
-      }
+      theme = theme === "light" ? "dark" : "light";
       setTheme(theme);
+      startTransition();
     });
   };
 })();

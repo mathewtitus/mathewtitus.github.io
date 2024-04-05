@@ -7,7 +7,7 @@
     <title>Sunstrand | Mathew Titus</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Technical Consulting">
-    <meta name="generator" content="Hugo 0.123.3">
+    <meta name="generator" content="Hugo 0.124.1">
     
     
     
@@ -20,8 +20,18 @@
 
 
 
+  <script>
+    console.log("Adding CSS stylesheet css\/nav.css")
+  </script>
   
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/nav.css">
+  
+
+  <script>
+    console.log("Adding CSS stylesheet css\/home.css")
+  </script>
+  
+    <link rel="stylesheet" href="/css/home.css">
   
 
     <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -31,6 +41,8 @@
 
     
       
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
 
     
 
@@ -49,7 +61,6 @@
 <meta property="og:description" content="Technical Consulting" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://sunstrand.tech/" />
-
 <meta itemprop="name" content="Sunstrand">
 <meta itemprop="description" content="Technical Consulting"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Sunstrand"/>
 <meta name="twitter:description" content="Technical Consulting"/>
@@ -74,7 +85,7 @@
     };
     supportsCssVars()||alert("Please view this demo in a browser that supports CSS Variables.");
   </script>
-    <div class="pb3-m pb6-l content content--canvas up">
+    <div class="pb3-m pb4-l content content--canvas up">
       <nav class="pv3 ph3 ph4-ns up" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -89,8 +100,14 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/cv" title="CV page">
-              CV
+            <a class="no-underline o-80" href="/about" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="no-underline o-80" href="/consulting" title="Consulting page">
+              Consulting
             </a>
           </li>
           
@@ -148,11 +165,11 @@
 </nav>
 
       <div class="tc-l pv3 ph3 ph4-ns up">
-        <h1 class="f2 f-subheadline-l fw5 near-white mb0 lh-title up">
+        <h1 class="f2 f-subheadline-l fw5 mb0 lh-title up">
           Sunstrand
         </h1>
         
-          <h2 class="fw3 f3 f2-l near-white measure-wide-l center lh-copy mt3 mb4 up">
+          <h2 class="fw3 f3 f2-l measure-wide-l center lh-copy mt3 mb4 up">
             Technical Consulting
           </h2>
         
@@ -167,49 +184,37 @@
       
 <script>
   console.log("home")
-  console.log("Pages(0)")
+  console.log("Pages(1)")
 </script>
-<article class="mw6 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-  <div class="tc">
-    <img src="/images/profile.jpg" class="br4 dib ba b--black-05 pa2" title="Photo of Mat">
-    <h1 class="f3 mb2">Mathew Titus</h1>
-    
-    <h2 class="f5 fw4 gray mt0">Pictured here with Alison (wife) and Charles (son)</h2>
-  </div>
-</article>
+<style>
+  main img {
+    border-radius: 40%;
+    width: 60%;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 2px;
+  }
+  main article {
+    background: transparent;
+  }
+</style>
+
 <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-  <p>Mathematician practicing statistics and computing.</p>
-<p>My work spans purely academic research, applied research, and production software for informing and empowering decision makers and citizen scientists.</p>
+  <p><img src="/images/headshot3.jpg" alt="Mathew Titus, Ph.D."></p>
+<h3 id="mathew-titus-phd">Mathew Titus, PhD</h3>
+<p>Mathematician practicing statistics and computing.</p>
+<p>Mathew works with digital logical systems: learning them, expanding them, creating and repairing them.</p>
+<p>Data visualization, technical and academic writing, report drafting.</p>
+<!-- raw HTML omitted -->
 
 </article>
-<article>
-  
-  <div class="collapse-bar w-100 bb bt ma1 pa3">
-      <center>
-        Contact Info <i class="fa-solid fa-arrow-turn-down"></i>
-      </center>
-  </div>
-  <div class="collapse-content pa3" style="display: none,  max-width: 500px">
-    <center>
-      <img class="mw6-ns" src="/images/qr-code.png" style="object-position: center;">
-    </center>
-  </div>
-  <div class="ma3"></div>
-</article>
 
-<script>
-  var coll = document.getElementsByClassName("collapse-bar")[0];
-  var content = document.getElementsByClassName("collapse-content")[0];
-  coll.addEventListener("click", function() {
-    this.classList.toggle("active");
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-      content.scrollIntoView({ behavior: "smooth", block: "end" })
-    }
-  });
-</script>
+
+
+
+
+
+
 <script>
   var ma = document.querySelector("main")
   ma.classList.add("relative")
@@ -224,9 +229,10 @@
   
 
     </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo" style="position: fixed; bottom: 0px">
+    
+<footer class="bottom-0 w-100 pa3 up" role="contentinfo" style="position: fixed; bottom: 0px">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://sunstrand.tech/" >
+  <a class="f4 fw4 hover-white no-underline dn dib-ns pv2 ph3" href="https://sunstrand.tech/" >
     &copy;  Mathew Titus 2024 
   </a>
     <div>
@@ -285,13 +291,14 @@
 
 <script>
   let theme = localStorage.getItem("theme") || "light";
-</script><script>
-  console.log("in theme toggle.html")
-  console.log("map[custom_header:true description:Technical Consulting draft:false iscjklanguage:false layout:home recent_posts_number:2 title:Sunstrand]")
 </script><script src="https://sunstrand.tech/theme-toggle.js"></script>
 
 <script src="/js/banner/noise.min.js"></script>
-<script src="/js/banner/util.js"></script><script> console.log("coalesce permalink: https:\/\/sunstrand.tech\/coalesce.js") ></script><script async src="https://sunstrand.tech/coalesce.js"></script>
+<script src="/js/banner/util.js"></script>
+
+<script>
+  console.log("banner permalink: https:\/\/sunstrand.tech\/coalesce.js")
+</script><script async src="https://sunstrand.tech/coalesce.js"></script>
 
 
 

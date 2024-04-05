@@ -1,10 +1,5 @@
 (() => {
-  // ns-params:@params
-  var params_default = { pageName: "Consulting", theme: "dark" };
-
   // <stdin>
-  console.log("in coalesce.js");
-  console.log(params_default);
   var particleCount = 200;
   var particlePropCount = 9;
   var particlePropsLength = particleCount * particlePropCount;
@@ -16,11 +11,38 @@
   var rangeSize = 1;
   var baseHue = 10;
   var rangeHue = 100;
-  var backgroundColor = "rgb(230,230,230)";
-  if (params_default.theme === "light") {
-    backgroundColor = "rgb(200,200,200)";
-  } else {
-    backgroundColor = "rgb(50,50,50)";
+  var mode = "light";
+  var currentBackground = "rgb(50,50,50)";
+  var transitionPerc = 0;
+  function intInterp(a, b, t) {
+    if (t < 0) {
+      t = 0;
+    } else if (t > 1) {
+      t = 1;
+    }
+    return Math.round(a * (1 - t) + b * t);
+  }
+  function backgroundColor(em, perc) {
+    let r, g, b;
+    const [dr, dg, db] = [50, 50, 50];
+    const [lr, lg, lb] = [168, 247, 246];
+    if (em === "dark") {
+      r = intInterp(lr, dr, perc).toString();
+      g = intInterp(lg, dg, perc).toString();
+      b = intInterp(lb, db, perc).toString();
+      return "rgb(" + r + "," + g + "," + b + ")";
+    } else if (em === "light") {
+      r = intInterp(dr, lr, perc).toString();
+      g = intInterp(dg, lg, perc).toString();
+      b = intInterp(db, lb, perc).toString();
+      return "rgb(" + r + "," + g + "," + b + ")";
+    }
+  }
+  function changeMode() {
+    transitionPerc = 0;
+    console.log("theme: " + mode);
+    console.log("transitionPerc: " + transitionPerc);
+    mode = mode === "dark" ? "light" : "dark";
   }
   var container;
   var canvas;
@@ -56,20 +78,26 @@
     hue = baseHue + rand(rangeHue);
     particleProps.set([x, y, vx, vy, life, ttl, speed, size, hue], i);
   }
-  function drawParticles() {
+  function drawParticles(mode2) {
     let i;
     for (i = 0; i < particlePropsLength; i += particlePropCount) {
-      updateParticle(i);
+      updateParticle(i, mode2);
     }
   }
-  function updateParticle(i) {
+  function updateParticle(i, mode2) {
     let i2 = 1 + i, i3 = 2 + i, i4 = 3 + i, i5 = 4 + i, i6 = 5 + i, i7 = 6 + i, i8 = 7 + i, i9 = 8 + i;
-    let x, y, theta, vx, vy, life, ttl, speed, x2, y2, size, hue;
+    let x, y, theta, vx, vy, life, ttl, speed, x2, y2, size, hue, r;
     x = particleProps[i];
     y = particleProps[i2];
-    theta = angle(x, y, center[0], center[1]) + 0.75 * HALF_PI;
-    vx = lerp(particleProps[i3], 2 * cos(theta), 0.05);
-    vy = lerp(particleProps[i4], 2 * sin(theta), 0.05);
+    r = Math.sqrt(x * x + y * y) / canvas.a.width;
+    theta = angle(x, y, center[0], center[1]) + HALF_PI;
+    if (mode2 === "dark") {
+      vx = lerp(particleProps[i3], 0.8 * cos(theta) / r ** 0.8, 0.05);
+      vy = lerp(particleProps[i4], 0.8 * sin(theta) / r ** 0.8, 0.05);
+    } else if (mode2 === "light") {
+      vx = lerp(particleProps[i3], 0, 0.05);
+      vy = lerp(particleProps[i4], -1, 0.05);
+    }
     life = particleProps[i5];
     ttl = particleProps[i6];
     speed = particleProps[i7];
@@ -112,7 +140,7 @@
       b: document.createElement("canvas")
     };
     canvas.b.style = `
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -158,13 +186,24 @@
   function draw() {
     tick++;
     ctx.a.clearRect(0, 0, canvas.a.width, canvas.a.height);
-    ctx.b.fillStyle = backgroundColor;
+    let theme = localStorage.getItem("theme") || "light";
+    let transitioning = localStorage.getItem("transition") || 1;
+    transitioning = parseFloat(transitioning);
+    if (transitioning < 1) {
+      transitioning += 0.01;
+      localStorage.setItem("transition", transitioning);
+    }
+    currentBackground = backgroundColor(theme, transitioning);
+    ctx.b.fillStyle = currentBackground;
     ctx.b.fillRect(0, 0, canvas.a.width, canvas.a.height);
-    drawParticles();
+    drawParticles(theme);
     renderGlow();
     render();
     window.requestAnimationFrame(draw);
   }
   window.addEventListener("load", setup);
   window.addEventListener("resize", resize);
+  document.getElementById("theme-toggle").addEventListener("click", function() {
+    changeMode();
+  });
 })();

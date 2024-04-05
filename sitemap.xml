@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sunstrand.tech/writing/math/</loc>
-    <lastmod>2024-02-27T23:35:13-08:00</lastmod>
+    <loc>https://sunstrand.tech/about/cv/</loc>
+    <lastmod>2024-02-25T13:41:51-08:00</lastmod>
+  </url><url>
+    <loc>https://sunstrand.tech/about/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sunstrand.tech/</loc>
+    <lastmod>2024-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sunstrand.tech/writing/math/</loc>
     <lastmod>2024-02-27T23:35:13-08:00</lastmod>
   </url><url>
     <loc>https://sunstrand.tech/writing/</loc>
     <lastmod>2024-02-27T23:35:13-08:00</lastmod>
-  </url><url>
-    <loc>https://sunstrand.tech/about/</loc>
-    <lastmod>2024-02-25T13:41:51-08:00</lastmod>
   </url><url>
     <loc>https://sunstrand.tech/posts/</loc>
     <lastmod>2024-02-25T08:11:21-08:00</lastmod>

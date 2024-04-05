@@ -1,0 +1,73 @@
+
+/** Light mode */
+
+body header, main, footer {
+  background-color: whitesmoke;
+  color: black;
+  transition: 1s;
+}
+
+body main {
+  p, h3 {
+    color: black;
+  }
+}
+
+body footer {
+  border-style: solid;
+  a {
+    color: black;
+  }
+}
+
+nav li a {
+  color: black;
+}
+
+.ananke-socials a {
+  color: black;
+}
+
+/** Dark mode */
+
+body.dark-mode nav li a {
+  color: gold;
+}
+
+body.dark-mode {
+  header, main {
+    background-color: rgb(50,50,50);
+    color: whitesmoke;
+  }
+
+  footer {
+    background-color: gold;
+    color: rgb(50,50,50);
+  }
+}
+
+body.dark-mode main {
+  p, h3 {
+    color: whitesmoke;
+  }
+}
+
+body.dark-mode header {
+  .ananke-socials a {
+    color: gold;
+  }
+}
+
+body.dark-mode footer {
+  .ananke-socials a {
+    color: rgb(50, 50, 50);
+  }
+}
+
+body.dark-mode .theme-icon:hover {
+  opacity: 1.0;
+}
+
+
+
+

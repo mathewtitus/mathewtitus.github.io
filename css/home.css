@@ -1,0 +1,77 @@
+
+/** Light mode */
+
+body header, main {
+  background: transparent ;
+  color: goldenrod;
+  stroke: currentColor;
+  transition: 2s;
+}
+
+body footer {
+  background-color: goldenrod;
+  color: rgb(168, 247, 246);
+  transition: 2s;
+}
+
+body main {
+  p, h3 {
+    color: goldenrod;
+  }
+}
+
+body:not(.dark-mode) {
+  .theme-icon {
+    opacity: 0.4;
+  }
+  .theme-icon:hover {
+    opacity: 1.0;
+  }
+}
+
+header .ananke-socials a {
+  color: goldenrod;
+  stroke: currentColor;
+}
+
+footer .ananke-socials a {
+  color: rgb(168, 247, 246);
+  stroke: currentColor;
+}
+
+/** Dark mode */
+
+body.dark-mode {
+  header, main {
+    color: gold;
+  }
+
+  footer {
+    background-color: gold;
+    color: rgb(50,50,50);
+  }
+}
+
+body.dark-mode main {
+  p, h3 {
+    color: gold;
+  }
+}
+
+body.dark-mode header {
+  .ananke-socials a {
+    color: gold;
+  }
+}
+
+body.dark-mode footer {
+  .ananke-socials a {
+    color: rgb(50, 50, 50);
+  }
+}
+
+body.dark-mode .theme-icon:hover {
+  opacity: 1.0;
+}
+
+

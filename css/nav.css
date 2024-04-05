@@ -1,13 +1,16 @@
 /** Navigation */
 
+/** Fix email icon color */
+
 #SVGRepo_iconCarrier path {
   stroke: currentColor;
 }
 
+
+
 .theme-icon {
   cursor: pointer;
   transition: 0.2s;
-  color: #00f;
   stroke: currentColor;
   opacity: 0.68;
   width: 26px;
