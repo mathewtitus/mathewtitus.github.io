@@ -6,7 +6,7 @@
     <description>Recent content in About on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Feb 2024 13:41:51 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sunstrand.tech/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curriculum Vitae</title>
@@ -14,6 +14,13 @@
       <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
       <guid>https://sunstrand.tech/about/cv/</guid>
       <description>My work and publications</description>
+    </item>
+    <item>
+      <title>Research Interests</title>
+      <link>https://sunstrand.tech/about/research/</link>
+      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunstrand.tech/about/research/</guid>
+      <description>Under Construction</description>
     </item>
   </channel>
 </rss>

@@ -19,6 +19,9 @@
 
 .theme-icon:hover {
   opacity: 1.0;
+  body * {
+    transition: 3s;
+  }
 }
 
 

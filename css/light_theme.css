@@ -1,16 +1,21 @@
 
 /** Light mode */
 
-body header, main, footer {
+body header, main, footer, nav {
   background-color: whitesmoke;
   color: black;
-  transition: 1s;
+/*  transition: 1s;*/
+}
+
+nav {
+  background-color: whitesmoke;
 }
 
 body main {
-  p, h3 {
+  p, h1, h2, h3, h4, li {
     color: black;
   }
+  display: flex;
 }
 
 body footer {
@@ -30,6 +35,10 @@ nav li a {
 
 /** Dark mode */
 
+body.dark-mode nav {
+  background-color: rgb(50,50,50);
+}
+
 body.dark-mode nav li a {
   color: gold;
 }
@@ -47,7 +56,7 @@ body.dark-mode {
 }
 
 body.dark-mode main {
-  p, h3 {
+  p, h1, h2, h3, h4, .blah > div {
     color: whitesmoke;
   }
 }

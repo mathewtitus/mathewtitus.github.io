@@ -1,4 +1,8 @@
+/** Fix link underlining & bluing */
 
+body.dark-mode main a {
+  color: whitesmoke;
+}
 
 /** CV */
 
@@ -33,9 +37,25 @@
 /*  background: transparent;*/
 }
 
+body.dark-mode {
+  .collapse-content * {
+    color: whitesmoke;
+  }
+}
+
+body.dark-mode .cv-text {
+  color: whitesmoke;
+}
+
+
+
 .prof-exp {
   list-style-type: none;
   list-style-position: outside;
+}
+
+body.dark-mode li, p > * {
+  color: whitesmoke;
 }
 
 
