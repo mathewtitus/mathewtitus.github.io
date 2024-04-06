@@ -43,6 +43,10 @@ body.dark-mode {
   }
 }
 
+body:not(.dark-mode) .cv-text {
+  color: black;
+}
+
 body.dark-mode .cv-text {
   color: whitesmoke;
 }
