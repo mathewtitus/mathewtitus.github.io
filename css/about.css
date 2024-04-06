@@ -1,7 +1,7 @@
 /** Fix link underlining & bluing */
 
 body.dark-mode main a {
-  color: whitesmoke;
+/*  color: whitesmoke;*/
 }
 
 /** CV */
@@ -51,15 +51,24 @@ body.dark-mode .cv-text {
   color: whitesmoke;
 }
 
-
-
 .prof-exp {
   list-style-type: none;
   list-style-position: outside;
 }
 
-body.dark-mode li, p > * {
+body.dark-mode li {
   color: whitesmoke;
 }
 
 
+/** Styling CV link in About _index.md body */
+
+body.dark-mode p > * {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body:not(.dark-mode) p > * {
+  text-decoration: none;
+  color: black;
+}
