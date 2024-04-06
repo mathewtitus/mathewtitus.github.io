@@ -1,14 +1,21 @@
 
 /** Light mode */
 
+/** Set text & background colors */
+body:not(.dark-mode) {
+  .primary-text { color: blue; }
+  .secondary-text { color: purple; }
+  .primary-bg { background-color: whitesmoke; }
+  .secondary-bg { background-color: #eee; }
+  .button-text { color: inherit; }
+  .button-bg { background-color: light-gray; } /* whitesmoke */
+  .button-hover:hover { background-color: moon-gray; } /* white */
+}
+
 body header, main, footer, nav {
   background-color: whitesmoke;
   color: black;
 /*  transition: 1s;*/
-}
-
-nav {
-  background-color: whitesmoke;
 }
 
 body main {
@@ -35,8 +42,19 @@ nav li a {
 
 /** Dark mode */
 
+/** Set text & background colors */
+body.dark-mode {
+  .primary-text { color: blue; }
+  .secondary-text { color: gray; }
+  .primary-bg { background-color: #333; }
+  .secondary-bg { background-color: #444; }
+  .button-text { color: inherit; }
+  .button-bg { background-color: #333; } /* whitesmoke */
+  .button-hover:hover { background-color: #222; } /* white */
+}
+
 body.dark-mode nav {
-  background-color: rgb(50,50,50);
+  background-color: #333;
 }
 
 body.dark-mode nav li a {
@@ -45,18 +63,18 @@ body.dark-mode nav li a {
 
 body.dark-mode {
   header, main {
-    background-color: rgb(50,50,50);
+    background-color: #333;
     color: whitesmoke;
   }
 
   footer {
     background-color: gold;
-    color: rgb(50,50,50);
+    color: #333;
   }
 }
 
 body.dark-mode main {
-  p, h1, h2, h3, h4, .blah > div {
+  p, h1, h2, h3, h4, li, .blah > div {
     color: whitesmoke;
   }
 }
@@ -69,7 +87,7 @@ body.dark-mode header {
 
 body.dark-mode footer {
   .ananke-socials a {
-    color: rgb(50, 50, 50);
+    color: #333;
   }
 }
 
@@ -77,6 +95,10 @@ body.dark-mode .theme-icon:hover {
   opacity: 1.0;
 }
 
+/** */
 
+body.dark-mode #TableOfContents li a {
+  color: whitesmoke;
+}
 
 

@@ -1,0 +1,9 @@
+body header nav {
+  background: transparent !important;
+  transition: 2s;
+}
+
+main {
+  position: relative;
+}
+

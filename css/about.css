@@ -11,17 +11,42 @@ body.dark-mode main a {
   border-color: transparent;
   text-align: left;
   outline: none;
-  background-color: whitesmoke;
 }
 
-.collapsible:hover {
-  border-color: black;
+
+body:not(.dark-mode) {
+  .collapsible {
+    background-color: whitesmoke;
+  }
+  .collapsible:hover {
+    border-color: black;
+  }
+  /* Add a background color to the button if it is clicked on 
+  (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #fff;
+  }
+  .cv-text {
+    color: black;
+  }
 }
 
-/* Add a background color to the button if it is clicked on 
-(add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #fff;
+body.dark-mode {
+  .collapsible {
+    color: whitesmoke;
+    background-color: #333;
+  }
+  .collapsible:hover {
+    border-color: whitesmoke;
+  }
+  /* Add a background color to the button if it is clicked on 
+  (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #2b2b2b;
+  }
+  .cv-text {
+    color: whitesmoke;
+  }
 }
 
 .collapsible .hide {
@@ -43,13 +68,6 @@ body.dark-mode {
   }
 }
 
-body:not(.dark-mode) .cv-text {
-  color: black;
-}
-
-body.dark-mode .cv-text {
-  color: whitesmoke;
-}
 
 .prof-exp {
   list-style-type: none;

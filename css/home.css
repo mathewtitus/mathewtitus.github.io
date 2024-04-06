@@ -2,10 +2,8 @@
 /** Light mode */
 
 body header, main {
-  background: transparent ;
   color: goldenrod;
   stroke: currentColor;
-  transition: 2s;
 }
 
 body footer {
