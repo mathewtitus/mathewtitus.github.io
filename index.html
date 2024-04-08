@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Sunstrand | Mathew Titus</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Technical Consulting">
-    <meta name="generator" content="Hugo 0.124.1">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-
+    <script>
+      console.log("Theme check 1: " + localStorage.theme || "none")
+    </script>
     
 <link rel="stylesheet" href="/ananke/css/main.min.css" >
 
@@ -41,10 +30,29 @@
     <link rel="stylesheet" href="/css/banner.css">
   
 
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="text/javascript" async src="/js/all.min.js"></script>
-<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
+    <script>
+      const setThemeHead = (theme) => {
+        theme ??= localStorage.theme || "light";
+        document.documentElement.dataset.theme = theme;
+        localStorage.theme = theme;
+        console.log("setThemeHead theme: " + theme)
+      };
+      setThemeHead();
+    </script>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Sunstrand | Mathew Titus</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Technical Consulting">
+    <meta name="generator" content="Hugo 0.124.1">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
     
       
@@ -191,30 +199,14 @@
       
     
     
-    <main class="pb5 up" role="main">
+    <main class="pb5 up relative" role="main">
       
-<script>
-  console.log("home")
-  console.log("Pages(5)")
-</script>
-<style>
-  main img {
-    border-radius: 40%;
-    width: 60%;
-    border-style: solid;
-    border-color: whitesmoke;
-    border-width: 2px;
-  }
-  main article {
-    background: transparent;
-  }
-</style>
 <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
   <p><img src="/images/headshot3.jpg" alt="Mathew Titus, Ph.D."></p>
 <h3 id="mathew-titus-phd">Mathew Titus, PhD</h3>
 <p>Mathematician practicing statistics and computing.</p>
-<p>Mathew works with digital logical systems: learning them, expanding them, creating and repairing them.</p>
-<p>Data visualization, technical and academic writing, report drafting.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 
 </article>
@@ -225,10 +217,6 @@
 
 
 
-<script>
-  var ma = document.querySelector("main")
-  ma.classList.add("relative")
-</script>
 
   
   
@@ -236,6 +224,12 @@
   
   
   
+  
+    
+    
+    
+
+
   
 
     </main>
@@ -294,6 +288,10 @@
 </div>
   </div>
 </footer>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" async src="/js/all.min.js"></script>
+<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
 
   </body>
   

@@ -6,7 +6,7 @@
     <description>Recent content in Sunstrand on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sunstrand.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curriculum Vitae</title>
@@ -23,25 +23,32 @@
       <description>Under Construction</description>
     </item>
     <item>
+      <title>Sampling Normal Random Variables</title>
+      <link>https://sunstrand.tech/writing/math/sampling-normals/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunstrand.tech/writing/math/sampling-normals/</guid>
+      <description>Knitting fractal surfaces out of normals For the banner above, we use a spectral synthesis technique developed in ???, based on the theory by Z. Gelbaum in ???. In short, by creating an appropriately weighted random sum of eigenfunctions of a region - in this case, a sphere -&#xA;The algorithm Box-Muller transform The algorithm Polar form of Box-Muller The algorithm // returns a gaussian random function with the given mean and stdev.</description>
+    </item>
+    <item>
       <title>Explainable AI for Algae Blooms</title>
       <link>https://sunstrand.tech/consulting/hab-xai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/hab-xai/</guid>
-      <description>Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models.</description>
+      <description>AI tools that enable understanding and accountability for source water management.</description>
     </item>
     <item>
       <title>Learning Causal Structures</title>
       <link>https://sunstrand.tech/consulting/causality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/causality/</guid>
-      <description>Under Construction</description>
+      <description>Theory and software to detect causal networks among complex social systems.</description>
     </item>
     <item>
       <title>Predicting Algae Blooms</title>
       <link>https://sunstrand.tech/consulting/hab-prediction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/hab-prediction/</guid>
-      <description>Under Construction</description>
+      <description>Using data gathered in the lake, upstream, and in outer space, to look ahead at HAB activity.</description>
     </item>
   </channel>
 </rss>

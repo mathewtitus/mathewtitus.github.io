@@ -6,7 +6,14 @@
     <description>Recent content in Math on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sunstrand.tech/writing/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sampling Normal Random Variables</title>
+      <link>https://sunstrand.tech/writing/math/sampling-normals/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunstrand.tech/writing/math/sampling-normals/</guid>
+      <description>Knitting fractal surfaces out of normals For the banner above, we use a spectral synthesis technique developed in ???, based on the theory by Z. Gelbaum in ???. In short, by creating an appropriately weighted random sum of eigenfunctions of a region - in this case, a sphere -&#xA;The algorithm Box-Muller transform The algorithm Polar form of Box-Muller The algorithm // returns a gaussian random function with the given mean and stdev.</description>
+    </item>
   </channel>
 </rss>

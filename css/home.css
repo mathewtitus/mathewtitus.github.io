@@ -1,4 +1,14 @@
 
+/** Profile pic */
+
+main img {
+  border-radius: 40%;
+  width: 60%;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 2px;
+}
+
 /** Light mode */
 
 body header, main {
@@ -13,6 +23,7 @@ body footer {
 }
 
 body main {
+  background: transparent !important;
   p, h3 {
     color: goldenrod;
   }

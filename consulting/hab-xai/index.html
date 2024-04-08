@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Explainable AI for Algae Blooms | Mathew Titus</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models.">
-    <meta name="generator" content="Hugo 0.124.1">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-
+    <script>
+      console.log("Theme check 1: " + localStorage.theme || "none")
+    </script>
     
 <link rel="stylesheet" href="/ananke/css/main.min.css" >
 
@@ -34,10 +23,29 @@
     <link rel="stylesheet" href="/css/light_theme.css">
   
 
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="text/javascript" async src="/js/all.min.js"></script>
-<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
+    <script>
+      const setThemeHead = (theme) => {
+        theme ??= localStorage.theme || "light";
+        document.documentElement.dataset.theme = theme;
+        localStorage.theme = theme;
+        console.log("setThemeHead theme: " + theme)
+      };
+      setThemeHead();
+    </script>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Explainable AI for Algae Blooms | Mathew Titus</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="AI tools that enable understanding and accountability for source water management.">
+    <meta name="generator" content="Hugo 0.124.1">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
     
       
@@ -57,17 +65,17 @@
     
 
     <meta property="og:title" content="Explainable AI for Algae Blooms" />
-<meta property="og:description" content="Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models." />
+<meta property="og:description" content="AI tools that enable understanding and accountability for source water management." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sunstrand.tech/consulting/hab-xai/" /><meta property="article:section" content="consulting" />
 
 
 <meta itemprop="name" content="Explainable AI for Algae Blooms">
-<meta itemprop="description" content="Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models.">
+<meta itemprop="description" content="AI tools that enable understanding and accountability for source water management.">
 
 <meta itemprop="wordCount" content="1271">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Explainable AI for Algae Blooms"/>
-<meta name="twitter:description" content="Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models."/>
+<meta name="twitter:description" content="AI tools that enable understanding and accountability for source water management."/>
 
 	
   </head>
@@ -177,7 +185,7 @@
 
 
     
-    <main class="pb5 up" role="main">
+    <main class="pb5 up relative" role="main">
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
@@ -329,6 +337,10 @@
 </div>
   </div>
 </footer>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" async src="/js/all.min.js"></script>
+<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
 
   </body>
   

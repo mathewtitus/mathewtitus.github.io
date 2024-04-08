@@ -12,21 +12,21 @@
       <link>https://sunstrand.tech/consulting/hab-xai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/hab-xai/</guid>
-      <description>Introduction Perhaps the largest barrier to implementing AI technologies in the utility management space is justifying the use of results that do not originate with human managers. Accountability to the public is fundamental for water providers, meaning they are subject to a great deal of regulation and scrutiny - and rightly so. Because of this, they cannot outsource their decision making around water safety to inscrutable and novel machine learning models.</description>
+      <description>AI tools that enable understanding and accountability for source water management.</description>
     </item>
     <item>
       <title>Learning Causal Structures</title>
       <link>https://sunstrand.tech/consulting/causality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/causality/</guid>
-      <description>Under Construction</description>
+      <description>Theory and software to detect causal networks among complex social systems.</description>
     </item>
     <item>
       <title>Predicting Algae Blooms</title>
       <link>https://sunstrand.tech/consulting/hab-prediction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sunstrand.tech/consulting/hab-prediction/</guid>
-      <description>Under Construction</description>
+      <description>Using data gathered in the lake, upstream, and in outer space, to look ahead at HAB activity.</description>
     </item>
   </channel>
 </rss>

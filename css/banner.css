@@ -1,9 +1,20 @@
-body header nav {
-  background: transparent !important;
-  transition: 2s;
+body:not(.dark-mode) {
+  header nav {
+    background-color: whitesmoke;
+    background: transparent !important;
+    transition: 2s;
+  }
 }
 
 main {
   position: relative;
 }
 
+
+body.dark-mode {
+  header nav {
+    background-color: #333;
+    background: transparent !important;
+    transition: 2s;
+  }
+}

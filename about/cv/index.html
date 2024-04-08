@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Curriculum Vitae | Mathew Titus</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="My work and publications in brief">
-    <meta name="generator" content="Hugo 0.124.1">
-    
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-
+    <script>
+      console.log("Theme check 1: " + localStorage.theme || "none")
+    </script>
     
 <link rel="stylesheet" href="/ananke/css/main.min.css" >
 
@@ -41,10 +30,29 @@
     <link rel="stylesheet" href="/css/about.css">
   
 
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script type="text/javascript" async src="/js/all.min.js"></script>
-<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
+    <script>
+      const setThemeHead = (theme) => {
+        theme ??= localStorage.theme || "light";
+        document.documentElement.dataset.theme = theme;
+        localStorage.theme = theme;
+        console.log("setThemeHead theme: " + theme)
+      };
+      setThemeHead();
+    </script>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Curriculum Vitae | Mathew Titus</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="My work and publications in brief">
+    <meta name="generator" content="Hugo 0.124.1">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
 
     
       
@@ -185,7 +193,7 @@
 
 
     
-    <main class="pb5 up" role="main">
+    <main class="pb5 up relative" role="main">
       
   <div class="flex-l mt2 mw8 center">
     <article class="center cf pv5 ph3 ph4-ns mw10">
@@ -489,6 +497,10 @@
 </div>
   </div>
 </footer>
+
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/javascript" async src="/js/all.min.js"></script>
+<script type="text/javascript" async src="/js/fontawesome.min.js"></script>
 
   </body>
   
