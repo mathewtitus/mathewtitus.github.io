@@ -8,8 +8,10 @@ body:not(.dark-mode) {
   .primary-bg { background-color: whitesmoke; }
   .secondary-bg { background-color: #eee; }
   .button-text { color: inherit; }
-  .button-bg { background-color: light-gray; } /* whitesmoke */
-  .button-hover:hover { background-color: moon-gray; } /* white */
+  .button-bg { background-color: lightgray; } /* whitesmoke */
+  .button-hover:hover { background-color: #909090; } /* white */
+  .button-border-color: { border-color: #ccc; }
+  .theme-border { border-color: rgba( 0, 0, 0, .1 ); }
 }
 
 body header, main, footer, nav {
@@ -48,9 +50,11 @@ body.dark-mode {
   .secondary-text { color: gray; }
   .primary-bg { background-color: #333; }
   .secondary-bg { background-color: #444; }
-  .button-text { color: inherit; }
-  .button-bg { background-color: #333; } /* whitesmoke */
-  .button-hover:hover { background-color: #222; } /* white */
+  .button-text { color: whitesmoke; }
+  .button-bg { background-color: #555; } /* whitesmoke */
+  .button-hover:hover { background-color: #888; } /* white */
+  .button-border-color: { border-color: #fff; }
+  .theme-border { border-color: rgba( 255, 255, 255, .1 ); }
 }
 
 body.dark-mode nav {
