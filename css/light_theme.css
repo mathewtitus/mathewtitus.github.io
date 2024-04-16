@@ -12,6 +12,23 @@ body:not(.dark-mode) {
   .button-hover:hover { background-color: #909090; } /* white */
   .button-border-color: { border-color: #ccc; }
   .theme-border { border-color: rgba( 0, 0, 0, .1 ); }
+  
+}
+
+body:not(.dark-mode) nav li {
+  background-image: linear-gradient(to right, transparent, transparent),linear-gradient(to right, black, black);
+  background-size: 100% 2px, 0% 0px;
+  background-position: 0px 100%, 100% 100%;
+  background-clip: content-box;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease 0s;
+}
+
+body:not(.dark-mode) nav li:hover {
+  background-size: 0% 2px, 100% 2px;
+  background-position: 100% 100%, 0px 100%;
 }
 
 body header, main, footer, nav {
@@ -63,6 +80,22 @@ body.dark-mode nav {
 
 body.dark-mode nav li a {
   color: gold;
+}
+
+body.dark-mode nav li {
+  background-image: linear-gradient(to right, transparent, transparent),linear-gradient(to right, gold, gold);
+  background-size: 100% 2px, 0% 0px;
+  background-position: 0px 100%, 100% 100%;
+  background-clip: content-box;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease 0s;
+}
+
+body.dark-mode nav li:hover {
+  background-size: 0% 2px, 100% 2px;
+  background-position: 100% 100%, 0px 100%;
 }
 
 body.dark-mode {

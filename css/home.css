@@ -83,4 +83,35 @@ body.dark-mode .theme-icon:hover {
   opacity: 1.0;
 }
 
+body:not(.dark-mode) nav li {
+  background-image: linear-gradient(to right, transparent, transparent),linear-gradient(to right, goldenrod, goldenrod);
+  background-size: 100% 2px, 0% 0px;
+  background-position: 0px 100%, 100% 100%;
+  background-clip: content-box;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease 0s;
+}
+
+body:not(.dark-mode) nav li:hover {
+  background-size: 0% 2px, 100% 2px;
+  background-position: 100% 100%, 0px 100%;
+}
+
+body.dark-mode nav li {
+  background-image: linear-gradient(to right, transparent, transparent),linear-gradient(to right, gold, gold);
+  background-size: 100% 2px, 0% 0px;
+  background-position: 0px 100%, 100% 100%;
+  background-clip: content-box;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease 0s;
+}
+
+body.dark-mode nav li:hover {
+  background-size: 0% 2px, 100% 2px;
+  background-position: 100% 100%, 0px 100%;
+}
 
