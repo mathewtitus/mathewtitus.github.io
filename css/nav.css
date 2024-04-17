@@ -7,21 +7,47 @@
 }
 
 
+/** Style & animate light-dark toggle */
 
 .theme-icon {
   cursor: pointer;
   transition: 0.2s;
   stroke: currentColor;
-  opacity: 0.68;
+  opacity: 1.0;
   width: 26px;
   height: 26px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: orbit;
+  animation-timing-function: linear;
+  animation-play-state: paused;
 }
 
 .theme-icon:hover {
-  opacity: 1.0;
-  body * {
-    transition: 3s;
+  animation-play-state: running;
+}
+
+
+@keyframes orbit {
+  from {
+    translate: 0px;
+  }
+  25% {
+    rotate: -30deg;
+    translate: -5px;
+  }
+  50% {
+    translate: 0px;
+  }
+  75% {
+    rotate: 45deg;
+    translate: 5px;
   }
 }
 
 
+/** Fix MSO link svg styling */
+
+.stackoverflow svg{
+  stroke-width: 0;
+}

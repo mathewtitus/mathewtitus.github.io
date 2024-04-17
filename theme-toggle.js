@@ -21,7 +21,7 @@
       themeIcon.alt = "moon icon";
     } else {
       body.classList.remove("dark-mode");
-      themeIcon.src = "/images/svg/sun-light.svg";
+      themeIcon.src = "/images/svg/sun.svg";
       themeIcon.alt = "sun icon";
     }
     localStorage.setItem("theme", theme);

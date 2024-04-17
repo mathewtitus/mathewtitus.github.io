@@ -29,14 +29,14 @@ body main {
   }
 }
 
-body:not(.dark-mode) {
+/*body:not(.dark-mode) {
   .theme-icon {
     opacity: 0.4;
   }
   .theme-icon:hover {
     opacity: 1.0;
   }
-}
+}*/
 
 header .ananke-socials a {
   color: goldenrod;
@@ -79,9 +79,13 @@ body.dark-mode footer {
   }
 }
 
-body.dark-mode .theme-icon:hover {
+/*body.dark-mode .theme-icon:hover {
   opacity: 1.0;
 }
+*/
+
+
+/** Animate link underlining */
 
 body:not(.dark-mode) nav li {
   background-image: linear-gradient(to right, transparent, transparent),linear-gradient(to right, goldenrod, goldenrod);
