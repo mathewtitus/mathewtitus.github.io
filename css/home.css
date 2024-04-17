@@ -29,15 +29,6 @@ body main {
   }
 }
 
-/*body:not(.dark-mode) {
-  .theme-icon {
-    opacity: 0.4;
-  }
-  .theme-icon:hover {
-    opacity: 1.0;
-  }
-}*/
-
 header .ananke-socials a {
   color: goldenrod;
   stroke: currentColor;
@@ -79,11 +70,6 @@ body.dark-mode footer {
   }
 }
 
-/*body.dark-mode .theme-icon:hover {
-  opacity: 1.0;
-}
-*/
-
 
 /** Animate link underlining */
 
@@ -117,5 +103,12 @@ body.dark-mode nav li {
 body.dark-mode nav li:hover {
   background-size: 0% 2px, 100% 2px;
   background-position: 100% 100%, 0px 100%;
+}
+
+
+/** fix name color change in footer (source in main.scss ...) */
+
+footer > div > a:hover{
+  color: inherit !important;
 }
 

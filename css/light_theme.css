@@ -128,14 +128,16 @@ body.dark-mode footer {
   }
 }
 
-body.dark-mode .theme-icon:hover {
-  opacity: 1.0;
-}
-
 /** */
 
 body.dark-mode #TableOfContents li a {
   color: whitesmoke;
 }
 
+
+/** fix name color change in footer (source in main.scss ...) */
+
+footer > div > a:hover{
+  color: inherit !important;
+}
 
