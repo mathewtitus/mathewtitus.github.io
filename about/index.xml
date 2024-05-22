@@ -9,6 +9,13 @@
     <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sunstrand.tech/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bookshelf</title>
+      <link>https://sunstrand.tech/about/bookshelf/</link>
+      <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
+      <guid>https://sunstrand.tech/about/bookshelf/</guid>
+      <description>A short list of books that have been important to me.</description>
+    </item>
+    <item>
       <title>Curriculum Vitae</title>
       <link>https://sunstrand.tech/about/cv/</link>
       <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
