@@ -6,14 +6,14 @@
     <description>Recent content in About on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2024 13:41:51 -0800</lastBuildDate>
     <atom:link href="https://sunstrand.tech/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookshelf</title>
       <link>https://sunstrand.tech/about/bookshelf/</link>
       <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
       <guid>https://sunstrand.tech/about/bookshelf/</guid>
-      <description>A short list of books that have been important to me.</description>
+      <description>A short list of books that have been important</description>
     </item>
     <item>
       <title>Curriculum Vitae</title>
@@ -21,13 +21,6 @@
       <pubDate>Sun, 25 Feb 2024 13:41:51 -0800</pubDate>
       <guid>https://sunstrand.tech/about/cv/</guid>
       <description>My work and publications</description>
-    </item>
-    <item>
-      <title>Research Interests</title>
-      <link>https://sunstrand.tech/about/research/</link>
-      <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://sunstrand.tech/about/research/</guid>
-      <description>Under Construction</description>
     </item>
   </channel>
 </rss>
