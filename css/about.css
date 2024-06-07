@@ -69,6 +69,8 @@ body.dark-mode {
 }
 
 
+
+
 .prof-exp {
   list-style-type: none;
   list-style-position: outside;
@@ -90,3 +92,13 @@ body:not(.dark-mode) p > * {
   text-decoration: none;
   color: black;
 }
+
+
+article p a {
+  color: steelblue !important;
+}
+
+body.dark-mode article p a {
+  color: skyblue !important;
+}
+

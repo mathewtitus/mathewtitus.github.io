@@ -58,6 +58,14 @@ body.dark-mode main {
   }
 }
 
+article a {
+  color: steelblue;
+}
+
+body.dark-mode article a {
+  color: skyblue;
+}
+
 body.dark-mode header {
   .ananke-socials a {
     color: gold;

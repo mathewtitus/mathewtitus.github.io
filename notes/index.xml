@@ -6,8 +6,15 @@
     <description>Recent content in Notes on Mathew Titus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Feb 2024 13:41:51 -0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2024 13:41:51 -0800</lastBuildDate>
     <atom:link href="https://sunstrand.tech/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Continuous Parameter Markov Processes and Stochastic Differential Equations</title>
+      <link>https://sunstrand.tech/notes/waymire_sdes/</link>
+      <pubDate>Fri, 24 May 2024 13:41:51 -0800</pubDate>
+      <guid>https://sunstrand.tech/notes/waymire_sdes/</guid>
+      <description>I originally read this text while it was being typeset around 2014. After bouncing off a number of resources on stochastic differential equations, I found this text finally presented the theory with enough foundational discussion and explicit examples to make It&amp;quot;o calculus intuitive.&#xA;The Stochastic Integral </description>
+    </item>
     <item>
       <title>Lebesgue Integration on Euclidean Space</title>
       <link>https://sunstrand.tech/notes/jones/</link>
