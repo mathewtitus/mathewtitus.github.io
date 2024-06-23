@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 100 10 A 90 90 0 1 1 10 100" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round" id="outer-circle">
+    <animateTransform
+      attributeName="transform"
+      begin="0s"
+      dur="12s"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      repeatCount="1" />
+  </path>
+  <path d="M 100 30 A 70 70 0 1 1 50.5025 149.4975" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round" id="mid-circ">
+    <animateTransform
+      attributeName="transform"
+      begin="3s"
+      dur="9s"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      repeatCount="1" />
+  </path>
+  <path d="M 100 50 A 50 50 0 1 1 100 150" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round">
+    <animateTransform
+      attributeName="transform"
+      begin="6s"
+      dur="6s"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      repeatCount="1" />
+  </path>
+  <circle cx="100" cy="100" r="30" fill="darkgoldenrod" stroke-width="0"/>
+</svg>
+
+<!-- transform="rotate(x)"
+<script>
+function changeRadius() {
+  document.getElementById("circle1").setAttribute("r", "50");
+}
+</script> -->
