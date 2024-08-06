@@ -71,5 +71,12 @@
       <guid>https://sunstrand.tech/consulting/hab-prediction/</guid>
       <description>Using data gathered in the lake, upstream, and in outer space, to look ahead at HAB activity.</description>
     </item>
+    <item>
+      <title>Snow Lidar Data for Water Supply Forecasting</title>
+      <link>https://sunstrand.tech/consulting/aso-m4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sunstrand.tech/consulting/aso-m4/</guid>
+      <description>Using next generation snowpack data to improve modern streamflow models.</description>
+    </item>
   </channel>
 </rss>
