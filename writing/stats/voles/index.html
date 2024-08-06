@@ -65,7 +65,7 @@ A large stretch of Western Oregon, from Coos Bay to ?" />
 Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
 A large stretch of Western Oregon, from Coos Bay to ?"><meta itemprop="datePublished" content="2024-02-27T23:26:17-08:00" />
 <meta itemprop="dateModified" content="2024-02-27T23:26:17-08:00" />
-<meta itemprop="wordCount" content="1349">
+<meta itemprop="wordCount" content="1386">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Voles"/>
 <meta name="twitter:description" content="Red Voles Vole Nesting It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.
 Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
@@ -259,7 +259,33 @@ A large stretch of Western Oregon, from Coos Bay to ?"/>
 (5) traverse the \( y=y_2 \) line horizontally to the far boundary;
 (6) repeat steps (4) and (5) for each increasing index value up to \( N \).</p>
 <p>See Figure X for an example of the path given a random plot assignment.</p>
-<!-- raw HTML omitted -->
+<center style="background-color: rgb(152, 152, 152);">
+  <br>
+  <img src="/images/voles_sim.png" alt="Random path through plots" style="width:80%;" />
+  <br><span style="color:black">
+  _Figure X: Simulated stand with trees (<span style="color:rgb(34, 139, 34)">without nests</span> and <span style="color:rgb(205, 92, 92)">with nests</span>), <span style="color:rgb(255, 250, 205)">plots and the path</span> between them, and <span style="color:rgb(255, 215, 0)">climb plots</span>. Opacity is higher for trees that more easily surveyed; compare the climb plots to the unsurveyed forest._
+  </span>
+</center>
+<!-- 
+floor_0: 152.0
+floor_1: 251.0
+floor_2: 152.0
+path_0: 255.0
+path_1: 250.0
+path_2: 205.0
+plot_0: 255.0
+plot_1: 250.0
+plot_2: 205.0
+climbed_plot_0: 255.0
+climbed_plot_1: 215.0
+climbed_plot_2: 0.0
+tree_0: 34.0
+tree_1: 139.0
+tree_2: 34.0
+nest_0: 205.0
+nest_1: 92.0
+nest_2: 92.0
+-->
 <p>Any nest within a distance of \(1\) is, with a probability \(p_{gr}\in[0,1]\), detected. To simulate the resulting confirmatory climb and aerial scan, any nests within \(1\) of that nest are detected with probability \( p_{tr} &gt; p_{gr} \).</p>
 <p>// Need to rewrite these gen sections</p>
 <h3 id="heading"></h3>
