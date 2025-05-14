@@ -1,7 +1,16 @@
 <?xml version="1.0" standalone="no"?>
 <svg width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- <filter id="filterData">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feDiffuseLighting surfaceScale="300">
+         <feDistantLight azimuth="90" elevation="95" />
+    </feDiffuseLighting>
+  </filter> -->
+  <!-- <feComposite result="composite" operator="in" in2="SourceGraphic" />  -->
   <path d="M 100 10 A 90 90 0 1 1 10 100" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round"/>
   <path d="M 100 30 A 70 70 0 1 1 50.5025 149.4975" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round"/>
   <path d="M 100 50 A 50 50 0 1 1 100 150" style="fill:none; stroke-width:10; stroke:darkgoldenrod; stroke-linecap:round"/>
   <circle cx="100" cy="100" r="30" fill="darkgoldenrod" stroke-width="0"/>
 </svg>
+
+<!-- filter='url(#filterData)' -->

@@ -24,9 +24,7 @@
     
     <title>Voles | Mathew Titus</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Red Voles Vole Nesting It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.
-Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
-A large stretch of Western Oregon, from Coos Bay to ?">
+    <meta name="description" content="Determining vole nesting dynamics">
     <meta name="generator" content="Hugo 0.124.1">
     
     
@@ -53,23 +51,17 @@ A large stretch of Western Oregon, from Coos Bay to ?">
     
 
     <meta property="og:title" content="Voles" />
-<meta property="og:description" content="Red Voles Vole Nesting It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.
-Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
-A large stretch of Western Oregon, from Coos Bay to ?" />
+<meta property="og:description" content="Determining vole nesting dynamics" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/writing/stats/voles/" /><meta property="article:section" content="writing" />
 <meta property="article:published_time" content="2024-02-27T23:26:17-08:00" />
 <meta property="article:modified_time" content="2024-02-27T23:26:17-08:00" />
 <meta itemprop="name" content="Voles">
-<meta itemprop="description" content="Red Voles Vole Nesting It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.
-Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
-A large stretch of Western Oregon, from Coos Bay to ?"><meta itemprop="datePublished" content="2024-02-27T23:26:17-08:00" />
+<meta itemprop="description" content="Determining vole nesting dynamics"><meta itemprop="datePublished" content="2024-02-27T23:26:17-08:00" />
 <meta itemprop="dateModified" content="2024-02-27T23:26:17-08:00" />
 <meta itemprop="wordCount" content="1386">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Voles"/>
-<meta name="twitter:description" content="Red Voles Vole Nesting It is widely thought that voles primarily nest in old growth forest, but they have been sighted in nearby younger forest. The nests may be actively occupied, abandoned, etc.
-Nesting Research In order to quantify the voles occupancy in younger forests a multi-year survey has been conducted by researchers at Oregon State University (OSU) and the National Council for Air and Stream Improvement (NCASI).
-A large stretch of Western Oregon, from Coos Bay to ?"/>
+<meta name="twitter:description" content="Determining vole nesting dynamics"/>
 
 	
   </head>
@@ -81,9 +73,14 @@ A large stretch of Western Oregon, from Coos Bay to ?"/>
    
   
 
-  <header>
+  
+  
+  
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://sunstrand.tech/images/vole.jpeg'); background-position: center; ">
     
-    <div class="">
+    <div>
       <nav class="pv3 ph3 ph4-ns up" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -100,6 +97,18 @@ A large stretch of Western Oregon, from Coos Bay to ?"/>
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="no-underline o-80" href="/consulting" title="Consulting page">
               Consulting
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="no-underline o-80" href="/support" title="For Students page">
+              For Students
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="no-underline o-80" href="/writing" title="Posts page">
+              Posts
             </a>
           </li>
           
@@ -180,6 +189,16 @@ A large stretch of Western Oregon, from Coos Bay to ?"/>
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Voles</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Determining vole nesting dynamics
+            </div>
+          
+        
+      </div>
     </div>
   </header>
 
@@ -327,7 +346,31 @@ with \( a \) near enough 1 that \( a \rho, p/a \in [0,1] \), and the model is un
       </div>
     </div>
 
-    <aside class="w-30-l mt6-l">
+    <aside class="w-30-l mt6-l"><div class="secondary-text secondary-bg pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Table of Contents</p>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vole-nesting">Vole Nesting</a></li>
+    <li><a href="#nesting-research">Nesting Research</a></li>
+    <li><a href="#data-collection">Data Collection</a></li>
+    <li><a href="#data-generation">Data Generation</a>
+      <ul>
+        <li><a href="#stands-of-trees-nests">Stands of trees, nests</a></li>
+        <li><a href="#plots-paths">Plots, paths</a></li>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+    <li><a href="#modeling-the-data-generation-process">Modeling the Data Generation Process</a>
+      <ul>
+        <li><a href="#occupancy-model">Occupancy Model</a></li>
+        <li><a href="#n-mixture-modeling">N-Mixture Modeling</a></li>
+        <li><a href="#heading-1">&hellip;</a></li>
+      </ul>
+    </li>
+    <li><a href="#fitting-the-model">Fitting the Model</a></li>
+  </ul>
+</nav>
+  </div>
 
 
 
@@ -341,7 +384,7 @@ with \( a \) near enough 1 that \( a \rho, p/a \in [0,1] \), and the model is un
 <footer class="bottom-0 w-100 pa3 up" role="contentinfo" style="position: fixed; bottom: 0px">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  Mathew Titus 2024 
+    &copy;  Mathew Titus 2025 
   </a>
     <div>
 <div class="ananke-socials">
